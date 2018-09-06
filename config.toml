@@ -2,7 +2,7 @@ baseurl       = "/"
 disableKinds  = ["section", "RSS", "sitemap", "robotsTXT"]
 googleAnalytics = ""
 languageCode = "en-AU"
-title         = "Site title here"
+title         = "The Auction Queens"
 uglyurls      = false
 
 [params]
