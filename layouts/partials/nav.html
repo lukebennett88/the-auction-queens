@@ -1,11 +1,11 @@
-<nav class="header bg-white pin-t shadow">
-  <a href="/" class="logo text-grey-darkest">{{ .Site.Title }}</a>
-  <input class="menu-btn" type="checkbox" id="menu-btn" />
-  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-  <ul class="menu bg-white">
+<nav class="nav bg-white fixed pin-t shadow w-full z-10">
+  <a href="/" class="logo block float-left no-underline text-2xl text-grey-darkest">{{ .Site.Title }}</a>
+  <input class="menu-btn hidden" type="checkbox" id="menu-btn">
+  <label class="menu-icon cursor-pointer float-right md:hidden inline-block relative select-none" for="menu-btn"><span class="navicon bg-grey-darkest block relative"></span></label>
+  <ul class="menu bg-white md:float-right list-reset m-0 overflow-hidden p-0">
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
-    <li><a class="hover:bg-grey-lightest border-grey-lighter border-r text-grey-darkest{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} header__link--active{{end}}"
+    <li class="md:float-left"><a class="hover:bg-grey-lightest block border-grey-lighter no-underline text-grey-darkest{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} header__link--active{{end}}"
         href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a></li>
     {{ end }}
 </ul>
