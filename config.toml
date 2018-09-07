@@ -6,7 +6,9 @@ title         = "The Auction Queens"
 uglyurls      = false
 
 [params]
-  siteDescription = "Site description here"
+  siteDescription = "Servicing the entire Mid North Coast"
+  phone = "0457 788 866"
+  email = "theauctionqueens@gmail.com"
   author = ""
   twitterSite = ""
   twitterCreator = ""
