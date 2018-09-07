@@ -1,6 +1,18 @@
 {{ define "main" }}
-<main class="p-12 rounded-lg shadow-lg text-grey-darkest mt-auto mb-auto">
-  <h1>{{ .Site.Title }}</h1>
-  {{ .Content }}
-</main>
+<section class="flex flex-col flex-wrap h-screen items-center justify-center md:text-2xl text-center w-full">
+  <h1 class="mb-4 mt-auto">{{ .Site.Title }}</h1>
+  <h2 class="mb-4">{{ .Site.Params.siteDescription }}</h2>
+  <h2 class="mb-4"><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></h2>
+  <h2><a href="tel:{{ .Site.Params.phone }}">{{ .Site.Params.phone }}</a></h2>
+  <a class="border-b border-purple-lighter mt-auto mb-32 pb-6 w-full" href="#about">About &darr;</a>
+</section>
+<section id="about" class="h-screen md:text-2xl">
+  <h1 class="mb-6">About</h1>
+  <div class="border-purple-lighter border-2 mb-6 p-6">
+    <h2>Sue</h2>
+  </div>
+  <div class="border-purple-lighter border-2 p-6">
+    <h2>Sharon</h2>
+  </div>
+</section>
 {{ end }}
