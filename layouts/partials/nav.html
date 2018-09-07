@@ -5,7 +5,7 @@
   <ul class="menu bg-white md:float-right list-reset m-0 overflow-hidden p-0">
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
-    <li class="md:float-left"><a class="hover:bg-grey-lightest block border-grey-lighter no-underline text-grey-darkest{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} header__link--active{{end}}"
+    <li class="md:float-left"><a class="hover:bg-grey-lightest block border-grey-lighter no-underline{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} text-grey-darkest{{ end }}"
         href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a></li>
     {{ end }}
 </ul>
