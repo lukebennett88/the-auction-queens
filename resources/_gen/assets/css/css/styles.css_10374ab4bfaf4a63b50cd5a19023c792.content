@@ -660,19 +660,15 @@ table {
 
 /* Site Specific */
 
-body {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  justify-content: center;
+a {
+  text-decoration: none;
+  color: #d6bbfc;
 }
 
 /* nav */
 
-nav li a {
+.nav li a {
   padding: 20px 20px;
-  color: #8795a1;
 }
 
 .nav .logo {
@@ -701,13 +697,13 @@ nav li a {
 
 .navicon:before,
 .navicon:after {
-  background: #3d4852;
-  content: "";
+  position: absolute;
+  background-color: #d6bbfc;
   display: block;
   height: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
   width: 100%;
+  content: "";
+  transition: all .2s ease-out;
 }
 
 .navicon:before {
@@ -752,10 +748,6 @@ nav li a {
     clear: none;
     max-height: none;
   }
-}
-
-main {
-  background-color: aquamarine;
 }
 
 .list-reset {
