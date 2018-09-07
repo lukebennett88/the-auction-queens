@@ -8,8 +8,9 @@ body {
 
 /* nav */
 
-.nav li a {
+nav li a {
   padding: 20px 20px;
+  color: #8795A1;
 }
 
 .nav .logo {
