@@ -1,16 +1,11 @@
-body {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  justify-content: center;
+a {
+  @apply no-underline text-purple-lighter;
 }
 
 /* nav */
 
-nav li a {
+.nav li a {
   padding: 20px 20px;
-  color: #8795A1;
 }
 
 .nav .logo {
@@ -39,13 +34,9 @@ nav li a {
 
 .navicon:before,
 .navicon:after {
-  background: #3D4852;
+  @apply absolute bg-purple-lighter block h-full w-full;
   content: "";
-  display: block;
-  height: 100%;
-  position: absolute;
   transition: all 0.2s ease-out;
-  width: 100%;
 }
 
 .navicon:before {
@@ -76,7 +67,7 @@ nav li a {
 
 .nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 .nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-  top: 0;
+  @apply pin-t;
 }
 
 /* 48em = 768px */
@@ -89,8 +80,4 @@ nav li a {
     clear: none;
     max-height: none;
   }
-}
-
-main {
-  background-color: aquamarine;
 }
