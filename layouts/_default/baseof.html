@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-AU{{ end }}">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -40,10 +41,14 @@
   {{ end }}
 </head>
 
-<body class="antialiased text-grey-darkest">
-  {{ partial "nav" . }}
-  {{ block "main" . }}{{ end }}
-  {{ partial "footer" . }}
+<body class="antialiased bg-black border-2 border-purple-lighter font-serif h-full text-white m-3 p-1">
+  <div class="border-2 border-purple-lighter h-full p-6 w-full">
+    {{ partial "nav" . }}
+    <main class="h-full w-full">
+      {{ block "main" . }}{{ end }}
+      {{ partial "footer" . }}
+    </main>
+  </div>
 </body>
 
 </html>
