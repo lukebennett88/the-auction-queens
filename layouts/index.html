@@ -1,13 +1,31 @@
 {{ define "main" }}
+<section class="border-2 border-purple-lighter h-screen m-2 p-1">
+  <div class="border-2 border-purple-lighter flex flex-col items-center justify-between h-full p-6">
+    {{ partial "nav" . }}
+    <div class="border-2 border-purple-lighter decoration p-1 relative">
+      <div class="border-2 border-purple-lighter p-6 relative text-center md:text-3xl">
+        <h1 class="mb-4">{{ .Site.Title }}</h1>
+        <h2 class="mb-4">{{ .Site.Params.siteDescription }}</h2>
+        <div class="text-5xl"><h1>♠️ 👸 ♥️</h1></div>
+        <h2 class="mb-4"><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></h2>
+        <h2><a href="tel:{{ .Site.Params.phone }}">{{ .Site.Params.phone }}</a></h2>
+      </div>
+    </div>
+    <div class="border-b border-purple-lighter flex items-center justify-center px-8 my-1 w-full">
+      <div class="mx-auto"><a href="#about">About &darr;</a></div>
+      <div class="mb-2 text-3xl upside-down">♥️</div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
 <section class="flex flex-col flex-wrap h-screen items-center justify-center md:text-2xl text-center w-full">
-  <h1 class="mb-4 mt-auto">{{ .Site.Title }}</h1>
-  <h2 class="mb-4">{{ .Site.Params.siteDescription }}</h2>
-  <h2 class="mb-4"><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></h2>
-  <h2><a href="tel:{{ .Site.Params.phone }}">{{ .Site.Params.phone }}</a></h2>
-  <a class="border-b border-purple-lighter mt-auto mb-32 pb-6 w-full" href="#about">About &darr;</a>
 </section>
 <section id="about" class="h-screen md:text-2xl">
-  <h1 class="mb-6">About</h1>
+  <h1 class="">About</h1>
   <div class="border-purple-lighter border-2 mb-6 p-6">
     <h2>Sue</h2>
   </div>
