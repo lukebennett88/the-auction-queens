@@ -2,6 +2,10 @@ a {
   @apply no-underline text-purple-lighter;
 }
 
+.upside-down {
+  transform: rotate(180deg);
+}
+
 /* nav */
 
 .nav li a {
@@ -16,7 +20,6 @@ a {
 
 .nav .menu {
   clear: both;
-  max-height: 0;
   transition: max-height 0.2s ease-out;
 }
 
@@ -48,9 +51,12 @@ a {
 }
 
 /* menu btn */
+.nav .menu-btn:not(:checked) ~ .menu {
+  display: none;
+}
 
 .nav .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  display: block;
 }
 
 .nav .menu-btn:checked ~ .menu-icon .navicon {
@@ -79,5 +85,52 @@ a {
   .nav .menu {
     clear: none;
     max-height: none;
+    display: block !important;
   }
+}
+
+/* BOX DECORATION */
+
+.decoration:before {
+  @apply absolute border-t-2 border-r-2 border-purple-lighter font-mono text-center text-purple-lighter;
+  content: "■";
+  font-size: 6px;
+  height: 12px;
+  line-height: 1.5;
+  width: 12px;
+  bottom: 6px;
+  left: 6px;
+}
+
+.decoration:after {
+  @apply absolute border-t-2 border-l-2 border-purple-lighter font-mono text-center text-purple-lighter;
+  content: "■";
+  font-size: 6px;
+  height: 12px;
+  line-height: 1.5;
+  width: 12px;
+  bottom: 6px;
+  right: 6px;
+}
+
+.decoration > div:before {
+  @apply absolute border-b-2 border-r-2 border-purple-lighter font-mono text-center text-purple-lighter;
+  content: "■";
+  font-size: 6px;
+  height: 12px;
+  line-height: 1.5;
+  width: 12px;
+  top: 0;
+  left: 0;
+}
+
+.decoration > div:after {
+  @apply absolute border-b-2 border-l-2 border-purple-lighter font-mono text-center text-purple-lighter;
+  content: "■";
+  font-size: 6px;
+  height: 12px;
+  line-height: 1.5;
+  width: 12px;
+  right: 0;
+  top: 0;
 }
