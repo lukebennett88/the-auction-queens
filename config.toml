@@ -20,5 +20,5 @@ uglyurls      = false
     weight = 1
   [[menu.main]]
     name = "About"
-    url  = "/about/"
+    url  = "/#about"
     weight = 2
