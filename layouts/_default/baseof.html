@@ -41,14 +41,8 @@
   {{ end }}
 </head>
 
-<body class="antialiased bg-black border-2 border-purple-lighter font-serif h-full text-white m-3 p-1">
-  <div class="border-2 border-purple-lighter h-full p-6 w-full">
-    {{ partial "nav" . }}
-    <main class="h-full w-full">
-      {{ block "main" . }}{{ end }}
-      {{ partial "footer" . }}
-    </main>
-  </div>
+<body class="antialiased bg-black font-serif text-white">
+  {{ block "main" . }}{{ end }}
 </body>
 
 </html>
