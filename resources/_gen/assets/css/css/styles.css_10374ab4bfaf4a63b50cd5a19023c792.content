@@ -665,6 +665,10 @@ a {
   color: #d6bbfc;
 }
 
+.upside-down {
+  transform: rotate(180deg);
+}
+
 /* nav */
 
 .nav li a {
@@ -679,7 +683,6 @@ a {
 
 .nav .menu {
   clear: both;
-  max-height: 0;
   transition: max-height .2s ease-out;
 }
 
@@ -716,8 +719,12 @@ a {
 
 /* menu btn */
 
+.nav .menu-btn:not(:checked) ~ .menu {
+  display: none;
+}
+
 .nav .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  display: block;
 }
 
 .nav .menu-btn:checked ~ .menu-icon .navicon {
@@ -747,7 +754,78 @@ a {
   .nav .menu {
     clear: none;
     max-height: none;
+    display: block !important;
   }
+}
+
+/* BOX DECORATION */
+
+.decoration:before {
+  position: absolute;
+  border-top-width: 2px;
+  border-right-width: 2px;
+  border-color: #d6bbfc;
+  font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+  text-align: center;
+  color: #d6bbfc;
+  content: "■";
+  font-size: 6px;
+  height: 12px;
+  line-height: 1.5;
+  width: 12px;
+  bottom: 6px;
+  left: 6px;
+}
+
+.decoration:after {
+  position: absolute;
+  border-top-width: 2px;
+  border-left-width: 2px;
+  border-color: #d6bbfc;
+  font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+  text-align: center;
+  color: #d6bbfc;
+  content: "■";
+  font-size: 6px;
+  height: 12px;
+  line-height: 1.5;
+  width: 12px;
+  bottom: 6px;
+  right: 6px;
+}
+
+.decoration > div:before {
+  position: absolute;
+  border-bottom-width: 2px;
+  border-right-width: 2px;
+  border-color: #d6bbfc;
+  font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+  text-align: center;
+  color: #d6bbfc;
+  content: "■";
+  font-size: 6px;
+  height: 12px;
+  line-height: 1.5;
+  width: 12px;
+  top: 0;
+  left: 0;
+}
+
+.decoration > div:after {
+  position: absolute;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+  border-color: #d6bbfc;
+  font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+  text-align: center;
+  color: #d6bbfc;
+  content: "■";
+  font-size: 6px;
+  height: 12px;
+  line-height: 1.5;
+  width: 12px;
+  right: 0;
+  top: 0;
 }
 
 .list-reset {
