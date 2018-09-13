@@ -1,8 +1,8 @@
 {{ define "main" }}
-<section class="border-2 border-purple-lighter h-screen m-2 p-1">
-  <div class="border-2 border-purple-lighter flex flex-col items-center justify-between h-full p-6">
+<section class="border-2 border-purple-lighter card h-screen p-1 relative">
+  <div class="border-2 border-purple-lighter flex flex-col items-center justify-between h-full p-6 relative">
     {{ partial "nav" . }}
-    <div class="border-2 border-purple-lighter decoration p-1 relative">
+    <div class="border-2 border-purple-lighter card p-1 relative">
       <div class="border-2 border-purple-lighter p-6 relative text-center md:text-3xl">
         <h1 class="mb-4">{{ .Site.Title }}</h1>
         <h2 class="mb-4">{{ .Site.Params.siteDescription }}</h2>

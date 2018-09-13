@@ -1,0 +1,32 @@
+/* BOX DECORATION */
+.card:before,
+.card::after,
+.card > div:before,
+.card > div::after {
+  content: "•";
+  display: grid;
+  height: 14px;
+  width: 14px;
+  font-size: 15px;
+  line-height: 8.5px;
+  @apply absolute border-2 border-purple-lighter text-center text-purple-lighter;
+}
+
+.card:before {
+  top: 4px;
+  left: 4px;
+}
+
+.card:after {
+  bottom: 4px;
+  left: 4px;
+}
+.card > div:before {
+  top: -2px;
+  right: -2px;
+}
+
+.card > div:after {
+  bottom: -2px;
+  right: -2px;
+}
