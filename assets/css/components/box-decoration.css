@@ -4,17 +4,16 @@
 .card > div:before,
 .card > div::after {
   content: "•";
-  display: grid;
-  height: 14px;
-  width: 14px;
-  font-size: 15px;
-  line-height: 8.5px;
-  @apply absolute border-2 border-purple-lighter text-center text-purple-lighter;
+  font-size: 13px;
+  height: 15px;
+  line-height: 12px;
+  width: 15px;
+  @apply absolute border-2 border-purple-lighter font-mono text-center text-purple-lighter;
 }
 
 .card:before {
-  top: 4px;
   left: 4px;
+  top: 4px;
 }
 
 .card:after {
@@ -22,8 +21,8 @@
   left: 4px;
 }
 .card > div:before {
-  top: -2px;
   right: -2px;
+  top: -2px;
 }
 
 .card > div:after {

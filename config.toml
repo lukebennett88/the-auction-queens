@@ -1,24 +1,28 @@
-baseurl       = "/"
-disableKinds  = ["section", "RSS", "sitemap", "robotsTXT"]
-googleAnalytics = ""
-languageCode = "en-AU"
-title         = "The Auction Queens"
-uglyurls      = false
+baseurl           = "/"
+disableKinds      = ["section", "RSS", "sitemap", "robotsTXT"]
+googleAnalytics   = ""
+languageCode      = "en-AU"
+title             = "The Auction Queens"
+uglyurls          = false
 
 [params]
   siteDescription = "Servicing the entire Mid North Coast"
-  phone = "0457 788 866"
-  email = "theauctionqueens@gmail.com"
-  author = ""
-  twitterSite = ""
-  twitterCreator = ""
+  phone           = "0457 788 866"
+  email           = "theauctionqueens@gmail.com"
+  author          = ""
+  twitterSite     = ""
+  twitterCreator  = ""
 
 [menu]
   [[menu.main]]
-    name = "Home"
-    url  = "/"
-    weight = 1
+    name          = "Home"
+    url           = "/"
+    weight        = 1
   [[menu.main]]
-    name = "About"
-    url  = "/#about"
-    weight = 2
+    name          = "Auctions"
+    url           = "/#auctions"
+    weight        = 2
+  [[menu.main]]
+    name          = "About"
+    url           = "/#about"
+    weight        = 3
