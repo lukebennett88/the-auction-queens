@@ -817,8 +817,13 @@ svg {
   margin: 0 auto;
   overflow: hidden;
   padding: 0;
-  /* position: relative; */
+  position: relative;
   z-index: 1;
+}
+
+.swiper-container img {
+  border-width: 2px;
+  border-color: #d6bbfc;
 }
 
 .swiper-container-no-flexbox .swiper-slide {
@@ -1422,7 +1427,7 @@ button.swiper-pagination-bullet {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  /* background: #fff; *//* Center slide text vertically */
+  /* background: #fff; *//* centerslide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3983,6 +3988,10 @@ button.swiper-pagination-bullet {
 
 .h-64 {
   height: 16rem;
+}
+
+.h-176 {
+  height: 44rem;
 }
 
 .h-auto {
@@ -9574,6 +9583,10 @@ button.swiper-pagination-bullet {
     height: 16rem;
   }
 
+  .sm\:h-176 {
+    height: 44rem;
+  }
+
   .sm\:h-auto {
     height: auto;
   }
@@ -15146,6 +15159,10 @@ button.swiper-pagination-bullet {
 
   .md\:h-64 {
     height: 16rem;
+  }
+
+  .md\:h-176 {
+    height: 44rem;
   }
 
   .md\:h-auto {
@@ -20722,6 +20739,10 @@ button.swiper-pagination-bullet {
     height: 16rem;
   }
 
+  .lg\:h-176 {
+    height: 44rem;
+  }
+
   .lg\:h-auto {
     height: auto;
   }
@@ -26294,6 +26315,10 @@ button.swiper-pagination-bullet {
 
   .xl\:h-64 {
     height: 16rem;
+  }
+
+  .xl\:h-176 {
+    height: 44rem;
   }
 
   .xl\:h-auto {

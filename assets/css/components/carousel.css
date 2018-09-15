@@ -14,8 +14,12 @@
   margin: 0 auto;
   overflow: hidden;
   padding: 0;
-  /* position: relative; */
+  position: relative;
   z-index: 1;
+}
+
+.swiper-container img {
+  @apply border-2 border-purple-lighter;
 }
 
 .swiper-container-no-flexbox .swiper-slide {
@@ -800,7 +804,7 @@ button.swiper-pagination-bullet {
   text-align: center;
   font-size: 18px;
   /* background: #fff; */
-  /* Center slide text vertically */
+  /* centerslide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
