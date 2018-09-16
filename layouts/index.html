@@ -1,10 +1,10 @@
 {{ define "main" }}
 <section class="h-screen p-2">
-  <div class="card border-2 border-purple-lighter h-full p-1 relative">
-    <div class="border-2 border-purple-lighter h-full p-6 md:p-12 relative">
+  <div class="card h-full">
+    <div class="flex flex-col items-center justify-between h-full w-full">
       {{ partial "nav" . }}
-      <div class="flex h-full w-full items-center justify-center">
-        <div class="text-center leading-loose">
+      <div class="card max-w-md relative">
+        <div class="text-center leading-loose relative">
           <h1>{{ .Site.Title }}</h1>
           <p class="text-5xl">👸♣️♥️♠️♦️👸</p>
           <h2>{{ .Site.Params.siteDescription }}</h2>
@@ -13,7 +13,7 @@
         </div>
       </div>
       <div class="flex flex-col items-center leading-none -mt-16 text-center text-xl">
-        <a class="" href="#auctions">
+        <a href="#auctions">
           <p>More</p>
           <p class="text-4xl upside-down">^</p>
         </a>
@@ -22,7 +22,6 @@
   </div>
 </section>
 
-<!-- Swiper -->
 <section id="auctions" class="h-screen p-2">
   <div class="card border-2 border-purple-lighter h-full p-1 relative">
     <div class="border-2 border-purple-lighter h-full mx-auto overflow-hidden p-12 relative">
@@ -31,61 +30,17 @@
         <h2>Sunday 16th September 2018</h2>
         <h2><a href="https://www.google.com.au/maps/dir//Taree+Showground,+24+Muldoon+St,+Taree+NSW+2430/@-31.9035534,152.459737,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x6b75c82555ad4b7d:0x11e8f28a98da2fb2!2m2!1d152.461931!2d-31.903558">Taree Showground →</a></h2>
       </div>
-      <div class="h-176">
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="/img/2018-09-16/lot00001.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="/img/2018-09-16/lot00002.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="/img/2018-09-16/lot00003.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="/img/2018-09-16/lot00004.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="/img/2018-09-16/lot00005.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="/img/2018-09-16/lot00006.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="/img/2018-09-16/lot00007.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="/img/2018-09-16/lot00008.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="/img/2018-09-16/lot00009.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="/img/2018-09-16/lot00010.jpg" alt=""></div>
-          </div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
-          <!-- Add Arrows -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
 
 <section id="about" class="h-screen p-2">
-    <div class="card border-2 border-purple-lighter h-full p-1 relative">
-      <div class="border-2 border-purple-lighter h-full p-12 relative">
+  <div class="card border-2 border-purple-lighter h-full p-1 relative">
+    <div class="border-2 border-purple-lighter h-full p-12 relative">
 
-        <h1>About</h1>
+      <h1>About</h1>
 
-      </div>
     </div>
-  </section>
-
-<!-- Swiper JS -->
-<script src="/js/swiper.min.js"></script>
-
-<!-- Initialize Swiper -->
-<script>
-var swiper = new Swiper('.swiper-container', {
-spaceBetween: 30,
-centeredSlides: true,
-autoplay: {
-delay: 3000,
-disableOnInteraction: false,
-},
-pagination: {
-el: '.swiper-pagination',
-clickable: true,
-},
-navigation: {
-nextEl: '.swiper-button-next',
-prevEl: '.swiper-button-prev',
-},
-});
-</script>
+  </div>
+</section>
 {{ end }}

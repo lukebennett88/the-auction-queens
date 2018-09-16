@@ -1,4 +1,12 @@
 /* BOX DECORATION */
+.card {
+  @apply border-2 border-purple-lighter p-1 relative;
+}
+
+.card > div {
+  @apply border-2 border-purple-lighter p-6 relative;
+}
+
 .card:before,
 .card::after,
 .card > div:before,

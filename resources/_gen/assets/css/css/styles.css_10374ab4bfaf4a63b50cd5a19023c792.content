@@ -763,6 +763,20 @@ svg {
 
 /* BOX DECORATION */
 
+.card {
+  border-width: 2px;
+  border-color: #d6bbfc;
+  padding: .25rem;
+  position: relative;
+}
+
+.card > div {
+  border-width: 2px;
+  border-color: #d6bbfc;
+  padding: 1.5rem;
+  position: relative;
+}
+
 .card:before,
 .card::after,
 .card > div:before,
