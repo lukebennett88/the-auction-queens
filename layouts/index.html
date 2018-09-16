@@ -3,18 +3,19 @@
   <div class="card h-full">
     <div class="flex flex-col items-center justify-between h-full w-full">
       {{ partial "nav" . }}
-      <div class="card max-w-md relative">
-        <div class="text-center leading-loose relative">
-          <h1>{{ .Site.Title }}</h1>
-          <p class="text-5xl">👸♣️♥️♠️♦️👸</p>
-          <h2>{{ .Site.Params.siteDescription }}</h2>
-          <p class="text-2xl"><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p>
-          <p class="text-2xl"><a href="tel:{{ .Site.Params.phone }}">{{ .Site.Params.phone }}</a></p>
+      <div class="border-2 border-purple-lighter p-1 max-w-sm relative">
+        <div class="border-2 border-purple-lighter flex flex-col p-4 text-center leading-normal relative">
+          <p class="flex flex-col leading-tight md:mb-12 ml-2 self-start text-3xl">♥️</p>
+          <h1 class="text-4xl mb-4">{{ .Site.Title }}</h1>
+          <h2 class="text-3xl">{{ .Site.Params.siteDescription }}</h2>
+          <p class="text-xl md:text-2xl"><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p>
+          <p class="text-xl md:text-2xl"><a href="tel:{{ .Site.Params.phone }}">{{ .Site.Params.phone }}</a></p>
+          <p class="flex flex-col leading-tight md:mt-12 mr-2 self-end text-3xl upside-down">♥️</p>
         </div>
       </div>
-      <div class="flex flex-col items-center leading-none -mt-16 text-center text-xl">
+      <div class="leading-none text-center">
         <a href="#auctions">
-          <p>More</p>
+          <p class="uppercase tracking-wide">More</p>
           <p class="text-4xl upside-down">^</p>
         </a>
       </div>
