@@ -20,7 +20,7 @@ uglyurls          = false
     weight        = 1
   [[menu.main]]
     name          = "Auctions"
-    url           = "/#auctions"
+    url           = "/auctions"
     weight        = 2
   [[menu.main]]
     name          = "About"

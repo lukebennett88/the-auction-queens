@@ -3,3 +3,11 @@
 @import "components/nav.css";
 @import "components/box-decoration.css";
 @import "components/carousel.css";
+
+.playing-card {
+  --ratio: 1.618;
+  --height: 80vw;
+  --width: calc(var(--height) / var(--ratio));
+  width: var(--width);
+  height: var(--height);
+}

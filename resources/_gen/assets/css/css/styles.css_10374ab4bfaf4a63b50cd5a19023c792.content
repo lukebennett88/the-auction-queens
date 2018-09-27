@@ -1447,6 +1447,14 @@ button.swiper-pagination-bullet {
   align-items: center;
 }
 
+.playing-card {
+  --ratio: 1.618;
+  --height: 80vw;
+  --width: calc(var(--height) / var(--ratio));
+  width: var(--width);
+  height: var(--height);
+}
+
 .list-reset {
   list-style: none;
   padding: 0;
