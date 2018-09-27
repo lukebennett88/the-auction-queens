@@ -593,12 +593,6 @@ textarea {
   font-family: inherit;
 }
 
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  color: inherit;
-  opacity: .5;
-}
-
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   color: inherit;
@@ -763,24 +757,29 @@ svg {
 
 /* BOX DECORATION */
 
-.card {
+.playing-card {
+  --ratio: 1.618;
+  --height: 80vw;
+  --width: calc(var(--height) / var(--ratio));
+  width: var(--width);
+  height: var(--height);
   border-width: 2px;
   border-color: #d6bbfc;
   padding: .25rem;
   position: relative;
 }
 
-.card > div {
+.playing-card > div {
   border-width: 2px;
   border-color: #d6bbfc;
   padding: 1.5rem;
   position: relative;
 }
 
-.card:before,
-.card::after,
-.card > div:before,
-.card > div::after {
+.playing-card:before,
+.playing-card::after,
+.playing-card > div:before,
+.playing-card > div::after {
   content: "•";
   font-size: 13px;
   height: 15px;
@@ -794,22 +793,22 @@ svg {
   color: #d6bbfc;
 }
 
-.card:before {
+.playing-card:before {
   left: 4px;
   top: 4px;
 }
 
-.card:after {
+.playing-card:after {
   bottom: 4px;
   left: 4px;
 }
 
-.card > div:before {
+.playing-card > div:before {
   right: -2px;
   top: -2px;
 }
 
-.card > div:after {
+.playing-card > div:after {
   bottom: -2px;
   right: -2px;
 }
@@ -1395,8 +1394,7 @@ button.swiper-pagination-bullet {
   height: 100%;
   background: #000;
   opacity: .6;
-  -webkit-filter: blur(50px);
-          filter: blur(50px);
+  filter: blur(50px);
   z-index: 0;
 }
 
@@ -1447,12 +1445,22 @@ button.swiper-pagination-bullet {
   align-items: center;
 }
 
-.playing-card {
-  --ratio: 1.618;
-  --height: 80vw;
-  --width: calc(var(--height) / var(--ratio));
-  width: var(--width);
-  height: var(--height);
+.__h_instagram.card {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  border: 1px solid rgb(219, 219, 219);
+  padding: 0;
+  margin-top: 30px;
+}
+
+.__h_instagram.card .card-header,
+.__h_instagram.card .card-body {
+  padding: 10px 10px 10px;
+}
+
+.__h_instagram.card img {
+  width: auto;
+  height: 100%;
 }
 
 .list-reset {

@@ -4,10 +4,19 @@
 @import "components/box-decoration.css";
 @import "components/carousel.css";
 
-.playing-card {
-  --ratio: 1.618;
-  --height: 80vw;
-  --width: calc(var(--height) / var(--ratio));
-  width: var(--width);
-  height: var(--height);
+.__h_instagram.card {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  border: 1px solid rgb(219, 219, 219);
+  padding: 0;
+  margin-top: 30px;
+}
+.__h_instagram.card .card-header,
+.__h_instagram.card .card-body {
+  padding: 10px 10px 10px;
+}
+.__h_instagram.card img {
+  width: auto;
+  height: 100%;
 }

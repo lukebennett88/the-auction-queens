@@ -1,16 +1,21 @@
 /* BOX DECORATION */
-.card {
+.playing-card {
+  --ratio: 1.618;
+  --height: 80vw;
+  --width: calc(var(--height) / var(--ratio));
+  width: var(--width);
+  height: var(--height);
   @apply border-2 border-purple-lighter p-1 relative;
 }
 
-.card > div {
+.playing-card > div {
   @apply border-2 border-purple-lighter p-6 relative;
 }
 
-.card:before,
-.card::after,
-.card > div:before,
-.card > div::after {
+.playing-card:before,
+.playing-card::after,
+.playing-card > div:before,
+.playing-card > div::after {
   content: "•";
   font-size: 13px;
   height: 15px;
@@ -19,21 +24,21 @@
   @apply absolute border-2 border-purple-lighter font-mono text-center text-purple-lighter;
 }
 
-.card:before {
+.playing-card:before {
   left: 4px;
   top: 4px;
 }
 
-.card:after {
+.playing-card:after {
   bottom: 4px;
   left: 4px;
 }
-.card > div:before {
+.playing-card > div:before {
   right: -2px;
   top: -2px;
 }
 
-.card > div:after {
+.playing-card > div:after {
   bottom: -2px;
   right: -2px;
 }

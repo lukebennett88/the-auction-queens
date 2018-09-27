@@ -1,8 +1,8 @@
 {{ define "main" }}
 
 <!-- FIRST -->
-<section class="bg-black h-screen p-2 text-white">
-  <div class="card h-full">
+<section class="bg-black min-h-screen p-2 text-white">
+  <div class="playing-card h-full w-full">
     <div class="flex flex-col items-center justify-between h-full w-full">
       {{ partial "nav" . }}
       <div class="leading-loose mb-12 text-center md:text-2xl">
@@ -16,7 +16,7 @@
 
         </div>
       <div class="leading-none text-center">
-        <a href="#auctions">
+        <a href="#about">
           <p class="uppercase tracking-wide">More</p>
           <p class="text-4xl upside-down">^</p>
         </a>
@@ -26,27 +26,20 @@
 </section>
 
 <!-- SECOND -->
-<section id="auctions" class="h-screen p-2">
-  <div class="card border-2 border-purple-lighter h-full p-1 relative">
-    <div class="border-2 border-purple-lighter h-full mx-auto overflow-hidden p-12 relative">
+<section id="about" class="bg-black min-h-screen p-2 text-white">
+  <div class="playing-card border-2 border-purple-lighter h-screen w-full p-1">
+    <div class="border-2 border-purple-lighter flex items-center justify-center h-full p-12">
 
-    </div>
-  </div>
-</section>
-
-<!-- THIRD -->
-<section id="about" class="bg-black h-screen p-2 text-white">
-  <div class="card border-2 border-purple-lighter h-full p-1 relative">
-    <div class="border-2 border-purple-lighter h-full p-12 relative">
-
-      <div class="border-2 border-purple-lighter p-1 relative">
-        <div class="border-2 border-purple-lighter flex flex-col p-4 text-center leading-normal relative playing-card">
-          <p class="flex flex-col leading-tight md:mb-12 ml-2 self-start text-3xl">♥️</p>
-          <h1 class="text-4xl mb-4">{{ .Site.Title }}</h1>
-          <h2 class="text-3xl">{{ .Site.Params.siteDescription }}</h2>
-          <p class="text-xl md:text-2xl"><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p>
-          <p class="text-xl md:text-2xl"><a href="tel:{{ .Site.Params.phone }}">{{ .Site.Params.phone }}</a></p>
-          <p class="flex flex-col leading-tight md:mt-12 mr-2 self-end text-3xl upside-down">♥️</p>
+      <div class="playing-card border-2 border-purple-lighter p-1">
+        <div class="border-2 border-purple-lighter flex flex-col justify-between h-full p-4 text-center leading-normal">
+          <div class="flex flex-col leading-tight md:mb-12 ml-2 self-start text-3xl">♥️</div>
+          <div>
+            <h1 class="text-4xl mb-4">{{ .Site.Title }}</h1>
+            <h2 class="text-3xl">{{ .Site.Params.siteDescription }}</h2>
+            <p class="text-xl md:text-2xl"><a class="text-purple-lighter" href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p>
+            <p class="text-xl md:text-2xl"><a class="text-purple-lighter" href="tel:{{ .Site.Params.phone }}">{{ .Site.Params.phone }}</a></p>
+          </div>
+          <div class="flex flex-col leading-tight md:mt-12 mr-2 self-end text-3xl upside-down">♥️</div>
         </div>
       </div>
 

@@ -18,11 +18,8 @@ uglyurls          = false
     name          = "Home"
     url           = "/"
     weight        = 1
-  [[menu.main]]
-    name          = "Auctions"
-    url           = "/auctions"
-    weight        = 2
+
   [[menu.main]]
     name          = "About"
     url           = "/#about"
-    weight        = 3
+    weight        = 2
