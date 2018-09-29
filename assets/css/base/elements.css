@@ -1,7 +1,0 @@
-a {
-  @apply no-underline text-purple-lighter;
-}
-
-svg {
-  @apply fill-current;
-}
