@@ -1,22 +1,22 @@
-@import "base/utilities.css";
-@import "base/elements.css";
+@import url("https://fonts.googleapis.com/css?family=Lora|Varela+Round");
 @import "components/nav.css";
-@import "components/box-decoration.css";
-@import "components/carousel.css";
 
-.__h_instagram.card {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 14px;
-  border: 1px solid rgb(219, 219, 219);
-  padding: 0;
-  margin-top: 30px;
+a {
+  @apply no-underline;
 }
-.__h_instagram.card .card-header,
-.__h_instagram.card .card-body {
-  padding: 10px 10px 10px;
+
+svg {
+  @apply fill-current;
 }
-.__h_instagram.card img {
-  width: auto;
-  height: 100%;
+
+.golden-ratio {
+  --ratio: 1.618;
+  --height: 30rem;
+  --width: calc(var(--height) / var(--ratio));
+  height: var(--height);
+  width: var(--width);
+}
+
+.upside-down {
+  transform: rotate(180deg);
 }
