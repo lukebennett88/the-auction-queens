@@ -6,7 +6,7 @@
   <ul class="menu md:float-right list-reset m-0 overflow-hidden p-0">
     {{- $currentPage := . }}
     {{- range .Site.Menus.main }}
-    <li class="border-t md:float-left"><a class="block no-underline{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} font-bold{{ end }}"
+    <li class="border-t md:float-left"><a class="block no-underline hover:text-indigo{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} font-bold{{ end }}"
         href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a></li>
     {{- end }}
   </ul>
