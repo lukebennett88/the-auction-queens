@@ -1,11 +1,12 @@
-<nav class="nav mx-6 md:mx-12 w-full z-10">
+<nav class="nav bg-white border rounded-lg shadow-lg w-full z-10">
   <a href="/" class="logo block float-left no-underline text-xl md:text-2xl">{{ .Site.Title }}</a>
   <input class="menu-btn hidden" type="checkbox" id="menu-btn">
-  <label class="menu-icon cursor-pointer float-right md:hidden inline-block relative select-none" for="menu-btn"><span class="navicon bg-purple-lighter block relative"></span></label>
+  <label class="menu-icon cursor-pointer float-right md:hidden inline-block relative select-none" for="menu-btn"><span
+      class="navicon bg-purple-lighter block relative"></span></label>
   <ul class="menu md:float-right list-reset m-0 overflow-hidden p-0">
     {{- $currentPage := . }}
     {{- range .Site.Menus.main }}
-    <li class="md:float-left"><a class="block no-underline{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} text-white{{end}}"
+    <li class="md:float-left"><a class="block no-underline{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} font-bold{{end}}"
         href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a></li>
     {{- end }}
   </ul>
