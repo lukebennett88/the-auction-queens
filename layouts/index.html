@@ -1,50 +1,10 @@
 {{ define "main" }}
 
 <!-- FIRST -->
-<section class="bg-black min-h-screen p-2 text-white">
-  <div class="playing-card h-full w-full">
-    <div class="flex flex-col items-center justify-between h-full w-full">
-      {{ partial "nav" . }}
-      <div class="leading-loose mb-12 text-center md:text-2xl">
-          <h1 class="uppercase">Next Auction</h1>
-          <h2>Sunday 16th September 2018</h2>
-          <h2><a href="https://www.google.com.au/maps/dir//Taree+Showground,+24+Muldoon+St,+Taree+NSW+2430/@-31.9035534,152.459737,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x6b75c82555ad4b7d:0x11e8f28a98da2fb2!2m2!1d152.461931!2d-31.903558">Taree Showground →</a></h2>
-
-          <div class="mx-auto">
-            {{ .Content }}
-          </div>
-
-        </div>
-      <div class="leading-none text-center">
-        <a href="#about">
-          <p class="uppercase tracking-wide">More</p>
-          <p class="text-4xl upside-down">^</p>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SECOND -->
-<section id="about" class="bg-black min-h-screen p-2 text-white">
-  <div class="playing-card border-2 border-purple-lighter h-screen w-full p-1">
-    <div class="border-2 border-purple-lighter flex items-center justify-center h-full p-12">
-
-      <div class="playing-card border-2 border-purple-lighter p-1">
-        <div class="border-2 border-purple-lighter flex flex-col justify-between h-full p-4 text-center leading-normal">
-          <div class="flex flex-col leading-tight md:mb-12 ml-2 self-start text-3xl">♥️</div>
-          <div>
-            <h1 class="text-4xl mb-4">{{ .Site.Title }}</h1>
-            <h2 class="text-3xl">{{ .Site.Params.siteDescription }}</h2>
-            <p class="text-xl md:text-2xl"><a class="text-purple-lighter" href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p>
-            <p class="text-xl md:text-2xl"><a class="text-purple-lighter" href="tel:{{ .Site.Params.phone }}">{{ .Site.Params.phone }}</a></p>
-          </div>
-          <div class="flex flex-col leading-tight md:mt-12 mr-2 self-end text-3xl upside-down">♥️</div>
-        </div>
-      </div>
-
-    </div>
-  </div>
+<section class="flex flex-col items-center justify-between p-2 min-h-screen">
+  {{ partial "nav" . }}
+  {{ partial "about" . }}
+  {{ partial "footer" . }}
 </section>
 
 {{ end }}
