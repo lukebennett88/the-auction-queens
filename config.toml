@@ -1,9 +1,7 @@
 baseurl           = "/"
 disableKinds      = ["section", "RSS", "sitemap", "robotsTXT"]
-googleAnalytics   = ""
 languageCode      = "en-AU"
 title             = "The Auction Queens"
-uglyurls          = false
 
 [params]
   siteDescription = "Servicing the entire Mid North Coast"
@@ -24,3 +22,8 @@ uglyurls          = false
     name          = "About"
     url           = "/about"
     weight        = 2
+
+  [[menu.main]]
+    name          = "Posts"
+    url           = "/post"
+    weight        = 3
