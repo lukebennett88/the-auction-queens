@@ -2,11 +2,7 @@
 @import "components/nav.css";
 
 a {
-  @apply no-underline;
-}
-
-svg {
-  @apply fill-current;
+  @apply text-grey-darkest no-underline;
 }
 
 .golden-ratio {
