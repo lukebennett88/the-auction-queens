@@ -29,7 +29,7 @@
 
 .navicon:before,
 .navicon:after {
-  @apply absolute bg-purple-lighter block h-full w-full;
+  @apply absolute bg-grey-darker block h-full w-full;
   content: "";
   transition: all 0.2s ease-out;
 }
