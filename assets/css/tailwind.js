@@ -190,6 +190,7 @@ module.exports = {
 
   fonts: {
     sans: [
+      'Rubik',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
@@ -204,6 +205,7 @@ module.exports = {
       'sans-serif',
     ],
     serif: [
+      'Playfair Display',
       'Constantia',
       'Lucida Bright',
       'Lucidabright',
