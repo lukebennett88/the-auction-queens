@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   {{ .Hugo.Generator }}
 
-  <title>{{ block "title" . }}{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}{{ end }}</title>
+  <title>{{ block "title" . }}{{ if .Title }}{{ .Site.Title }} | {{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}{{ end }}</title>
   <meta id="description" name="description" content="{{ block "description" . }}{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.SiteDescription }}{{ end }}{{ end }}">
 
   <link rel="canonical" href="{{ .URL | absURL }}">
