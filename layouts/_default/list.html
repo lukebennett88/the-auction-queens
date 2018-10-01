@@ -4,9 +4,12 @@
   {{ partial "nav" . }}
   <main class="container mx-auto">
 
-    <ul class="bg-white border container list-reset p-2 rounded-lg shadow-lg">
+    <ul class="bg-white border list-reset mx-auto rounded-lg shadow-lg">
       {{ range .Pages }}
-      <li><a href="{{ .URL }}">{{ .Title }}</a></li>
+      <li class="border-b p-2">
+        <h2><a class="text-teal-dark" href="{{ .URL }}">{{ .Title }}</a></h2>
+        <p>{{ .Summary }}</p>
+      </li>
       {{ end }}
     </ul>
 
