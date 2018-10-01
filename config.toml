@@ -1,5 +1,5 @@
 baseurl           = "/"
-disableKinds      = "RSS"
+disableKinds      = ["RSS", "taxonomy", "taxonomyTerm"]
 languageCode      = "en-AU"
 title             = "The Auction Queens"
 
