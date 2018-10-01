@@ -20,10 +20,10 @@ title             = "The Auction Queens"
 
   [[menu.main]]
     name          = "About"
-    url           = "/about"
+    url           = "/about/"
     weight        = 2
 
   [[menu.main]]
     name          = "Posts"
-    url           = "/post"
+    url           = "/post/"
     weight        = 3
