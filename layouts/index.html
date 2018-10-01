@@ -1,11 +1,8 @@
 {{ define "main" }}
 
-<!-- FIRST -->
-<section class="flex flex-col items-center justify-between pt-2 px-2 min-h-screen">
-  {{ partial "nav" . }}
-  {{ .Content }}
-  {{ partial "card" . }}
-  {{ partial "footer" . }}
-</section>
+<main>
+  {{- .Content }}
+  {{- partial "card" . }}
+</main>
 
 {{ end }}

@@ -1,21 +1,14 @@
 {{ define "main" }}
 
-<section class="flex flex-col items-center justify-between pt-2 px-2 min-h-screen">
-  {{ partial "nav" . }}
-  <main class="container mx-auto">
-
-    <ul class="bg-white border list-reset mx-auto rounded-lg shadow-lg">
-      {{ range .Pages }}
-      <li class="border-b p-2">
-        <h2><a class="text-teal-dark" href="{{ .URL }}">{{ .Title }}</a></h2>
-        <p>{{ .Summary }}</p>
-      </li>
-      {{ end }}
-    </ul>
-
-
-  </main>
-  {{ partial "footer" . }}
-</section>
+<main class="bg-white border rounded-lg shadow-lg">
+  <ul class="list-reset m-0">
+    {{ range .Pages }}
+    <li class="border-b p-2">
+      <h2><a class="text-teal-dark" href="{{ .URL }}">{{ .Title }}</a></h2>
+      <p>{{ .Summary }}</p>
+    </li>
+    {{ end }}
+  </ul>
+</main>
 
 {{ end }}
