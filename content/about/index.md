@@ -1,6 +1,11 @@
 +++
 title = "About"
 description = "About The Auction Queens"
+[menu]
+  [[menu.main]]
+    name          = "About"
+    url           = "/"
+    weight        = 2
 +++
 
 The Auction Queens are Sue & Sharon — two friends with a passion for antiques and collectables.
