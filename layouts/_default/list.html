@@ -1,16 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
+{{ define "main" }}
+
+<section class="flex flex-col items-center justify-between p-2 min-h-screen">
+  {{ partial "nav" . }}
+  <main class="container mx-auto">
+
+    <ul class="bg-white border container list-reset p-2 rounded-lg shadow-lg">
+      {{ range .Pages }}
+      <li><a href="{{ .URL }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
 
 
-  <h1>List Page</h1>
-  {{ .Content }}
+  </main>
+  {{ partial "footer" . }}
+</section>
 
-</body>
-</html>
+{{ end }}
