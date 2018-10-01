@@ -4,6 +4,7 @@
 <section class="flex flex-col items-center justify-between p-2 min-h-screen">
   {{ partial "nav" . }}
   <main class="max-w-md my-32 px-4 md:px-20">
+    <h1><a class="text-teal-dark" href="{{ .URL }}">{{ .Title }}</a></h1>
     {{ .Content }}
   </main>
   {{ partial "footer" . }}
