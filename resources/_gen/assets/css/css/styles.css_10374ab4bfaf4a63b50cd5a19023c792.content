@@ -773,11 +773,6 @@ table {
   }
 }
 
-a {
-  color: #3d4852;
-  text-decoration: none;
-}
-
 .golden-ratio {
   --ratio: 1.618;
   --height: 30rem;
@@ -6521,6 +6516,7 @@ body {
 }
 
 a {
+  color: #3d4852;
   text-decoration: none;
 }
 
