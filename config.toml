@@ -11,19 +11,3 @@ title             = "The Auction Queens"
   author          = ""
   twitterSite     = ""
   twitterCreator  = ""
-
-[menu]
-  [[menu.main]]
-    name          = "Home"
-    url           = "/"
-    weight        = 1
-
-  [[menu.main]]
-    name          = "About"
-    url           = "/about/"
-    weight        = 2
-
-  [[menu.main]]
-    name          = "Posts"
-    url           = "/post/"
-    weight        = 3
