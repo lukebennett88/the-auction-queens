@@ -6768,6 +6768,7 @@ figure:last-child {
 figcaption {
   font-size: .8em;
   margin-top: .875em;
+  text-align: left;
 }
 
 table {
