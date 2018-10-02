@@ -215,6 +215,7 @@ figure:last-child {
 figcaption {
   font-size: 0.8em;
   margin-top: 0.875em;
+  text-align: left;
 }
 table {
   width: 100%;
