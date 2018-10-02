@@ -5,7 +5,7 @@
     {{ range .Pages }}
     <li class="border-b max-w-md mt-8 p-2">
       <h2><a class="text-teal-dark" href="{{ .URL }}">{{ .Title }}</a></h2>
-      <p>{{ .Summary }}</p>
+      <p>{{ .Content }}</p>
     </li>
     {{ end }}
   </ul>
