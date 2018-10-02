@@ -28,6 +28,7 @@ hr {
   margin-top: 1.4em;
 }
 img {
+  max-width: 100%;
   vertical-align: text-bottom;
 }
 ins {
