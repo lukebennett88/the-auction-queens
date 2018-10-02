@@ -11,9 +11,9 @@
 {{- if not $sc.DisableInlineCSS -}}
 {{- end -}}
 <figure style="max-width: {{ $item.thumbnail_width }}px">
-  <img class="card-img-top img-fluid" src="{{ $item.thumbnail_url }}" width="{{ $item.thumbnail_width }}"  height="{{ $item.thumbnail_height }}" alt="Instagram Image">
+  <img src="{{ $item.thumbnail_url }}" width="{{ $item.thumbnail_width }}"  height="{{ $item.thumbnail_height }}" alt="Instagram Image">
   <figcaption class="text-base">
-    {{ if not $hideCaption }}<p class="card-text">{{ $item.title}}</p>{{ end }}
+    {{ if not $hideCaption }}<p>{{ $item.title}}</p>{{ end }}
   </figcaption>
 </figure>
 {{- end }}
