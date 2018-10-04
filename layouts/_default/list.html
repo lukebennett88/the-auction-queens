@@ -1,14 +1,14 @@
 {{ define "main" }}
-
-<main class="bg-white border my-8 p-2 rounded-lg shadow-lg">
+<main class="bg-white border my-6 p-2 rounded-lg shadow-lg">
   <ul class="list-reset mx-0">
     {{ range .Pages }}
     <li class="border-b max-w-md mt-8">
-      <h2><a class="text-teal-dark" href="{{ .URL }}">{{ .Title }}</a></h2>
-      <p>{{ .Content }}</p>
+      <article>
+        <h2><a class="text-grey-darkest" href="{{ .URL }}">{{ .Title }}</a></h2>
+        <p>{{ .Content }}</p>
+      </article>
     </li>
     {{ end }}
   </ul>
 </main>
-
 {{ end }}

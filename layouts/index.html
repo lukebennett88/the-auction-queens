@@ -3,7 +3,8 @@
 {{ end }}
 
 {{ define "main" }}
-<main class="flex flex-wrap items-center justify-center w-screen">
+<main class="flex flex-wrap items-center justify-center mt-8 w-screen">
+  {{ .Content }}
   {{- partial "card" . }}
 </main>
 {{ end }}
