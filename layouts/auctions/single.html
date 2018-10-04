@@ -1,0 +1,10 @@
+{{ define "main" }}
+
+<main class="bg-white border max-w-md my-8 p-2 rounded-lg shadow-lg w-full">
+  <article class="mx-auto my-8">
+    <h1><a class="text-teal-dark" href="{{ .URL }}">{{ .Title }}</a></h1>
+    {{ .Content }}
+  </article>
+</main>
+
+{{ end }}
