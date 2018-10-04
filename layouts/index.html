@@ -1,7 +1,23 @@
-{{ define "main" }}
+{{ define "head" }}
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+{{ end }}
 
+{{ define "main" }}
 <main class="flex flex-wrap items-center justify-center w-screen">
   {{- partial "card" . }}
 </main>
+{{ end }}
 
+{{ define "script" }}
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 {{ end }}

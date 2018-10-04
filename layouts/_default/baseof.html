@@ -39,12 +39,14 @@
   {{ $style.Content | safeCSS }}
   </style>
   {{ end }}
+  {{- block "head" . }}{{ end }}
 </head>
 
 <body class="antialiased bg-indigo-lightest flex flex-col font-sans items-center justify-between min-h-screen pt-2 px-2 text-lg text-grey-darkest">
-  {{- partial "nav" . }}
-  {{- block "main" . }}{{ end }}
-  {{- partial "footer" . }}
+  {{ partial "nav" . }}
+  {{ block "main" . }}{{ end }}
+  {{ partial "footer" . }}
+  {{- block "script" . }}{{ end }}
 </body>
 
 </html>
