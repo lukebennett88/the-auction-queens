@@ -93,6 +93,7 @@ h6:first-child {
   margin-top: 0;
 }
 h1 {
+  @apply font-serif;
   font-size: 2.4em;
   margin-bottom: 0.58333em;
   margin-top: 0.58333em;
@@ -249,4 +250,12 @@ tfoot td code {
 }
 tbody tr {
   background-color: #fff;
+}
+
+main p a {
+  @apply font-bold bg-indigo-lightest;
+}
+
+main p a:hover {
+  @apply bg-indigo-light text-white;
 }
