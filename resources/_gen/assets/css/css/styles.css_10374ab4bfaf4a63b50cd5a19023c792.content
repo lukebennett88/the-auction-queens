@@ -673,17 +673,13 @@ table {
 
 /* Site Specific */
 
-/* nav */
-
 .nav li a {
-  padding: 20px 20px;
+  padding: 20px;
 }
 
 .nav .logo {
   padding: 15.5px 20px;
 }
-
-/* menu */
 
 .nav .menu {
   clear: both;
@@ -692,10 +688,8 @@ table {
   transition: max-height .2s ease-out;
 }
 
-/* menu icon */
-
 .nav .menu-icon {
-  padding: 28px 20px;
+  padding: 30px 20px;
 }
 
 .navicon {
@@ -726,8 +720,6 @@ table {
 .navicon:after {
   top: -5px;
 }
-
-/* menu btn */
 
 .nav .menu-btn:not(:checked) ~ .menu {
   display: none;
@@ -760,11 +752,10 @@ table {
   top: 0;
 }
 
-/* 48em = 768px */
-
 @media (min-width: 48em) {
   .nav li a {
     padding: 20px 30px;
+    padding-left: 10px;
   }
 
   .nav .menu {
@@ -6617,6 +6608,7 @@ h6:first-child {
 }
 
 h1 {
+  font-family: Playfair Display, Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
   font-size: 2.4em;
   margin-bottom: .58333em;
   margin-top: .58333em;
@@ -6809,6 +6801,16 @@ tfoot td code {
 
 tbody tr {
   background-color: #fff;
+}
+
+main p a {
+  font-weight: 700;
+  background-color: #e6e8ff;
+}
+
+main p a:hover {
+  background-color: #7886d7;
+  color: #fff;
 }
 
 @media (min-width: 576px) {
