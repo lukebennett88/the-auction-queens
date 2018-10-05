@@ -1,24 +1,18 @@
-/* nav */
-
 .nav li a {
-  padding: 20px 20px;
+  padding: 20px;
 }
 
 .nav .logo {
   padding: 15.5px 20px;
 }
 
-/* menu */
-
 .nav .menu {
   clear: both;
   transition: max-height 0.2s ease-out;
 }
 
-/* menu icon */
-
 .nav .menu-icon {
-  padding: 28px 20px;
+  padding: 30px 20px;
 }
 
 .navicon {
@@ -42,7 +36,6 @@
   top: -5px;
 }
 
-/* menu btn */
 .nav .menu-btn:not(:checked) ~ .menu {
   display: none;
 }
@@ -68,11 +61,10 @@
   @apply pin-t;
 }
 
-/* 48em = 768px */
-
 @media (min-width: 48em) {
   .nav li a {
     padding: 20px 30px;
+    padding-left: 10px;
   }
   .nav .menu {
     clear: none;
