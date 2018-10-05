@@ -1,29 +1,24 @@
 <!DOCTYPE html>
-<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-AU{{ end }}">
+<html lang="{{ .Site.LanguageCode | default "en" }}">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  {{ .Hugo.Generator }}
 
   <title>{{ block "title" . }}{{ if .Title }}{{ .Site.Title }} | {{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}{{ end }}</title>
   <meta id="description" name="description" content="{{ block "description" . }}{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.SiteDescription }}{{ end }}{{ end }}">
 
+  {{ "<!-- SEO -->" | safeHTML }}
+  <meta name="robots" content="index, follow">
+  {{ .Hugo.Generator }}
   <link rel="canonical" href="{{ .URL | absURL }}">
-
-  {{ "<!-- Open graph data -->" | safeHTML }}
   <meta property="og:site_name" content="{{ .Site.Title }}">
   <meta property="og:title" content="{{ if eq .IsHome true }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
   <meta property="og:url" content="{{ .URL | absURL }}">
   <meta property="og:type" content="{{ if eq .Type "page" }}website{{ else }}article{{ end }}">
   <meta property="og:description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.siteDescription }}{{ end }}">
   <meta property="og:image" content="{{ if eq .Type "page" }}{{ .Site.BaseURL }}img/logo.png{{ else }}{{ .Site.BaseURL }}img/{{ .Params.photo }}{{ end }}">
-
-  {{ "<!-- Twitter Card -->" | safeHTML }}
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="{{ .Site.Params.twitterSite }}">
-  <meta name="twitter:creator" content="{{ .Site.Params.twitterCreator }}">
 
   {{ "<!-- Favicons -->" | safeHTML }}
   <link rel="icon" type="image/png" href="{{ .Site.BaseURL }}img/favicon.png">
