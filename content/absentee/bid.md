@@ -243,30 +243,3 @@ title = "Online absentee bid form"
   </div>
 
 </form>
-
-<!--
-  *The Auction Queens offers this service as a convenience to
-buyers who are unable to attend the auction and will not be held
-responsible for errors or failure to execute bids.
-
-*Lots will be bought as reasonably as is allowed by reserves and
-other bids, if any, and in accordance with the terms and conditions of
-Auction Sale.
-
-*A Buyer’s Premium of 15.00% (GST inclusive) will be added to the
-hammer price of all lots purchased.
-
-*All lots must be paid for and collected by 4pm on the day following
-the auction. If not picked up by this time, storage and handling charges
-will apply.
-
-I/We hereby agree to abide by the terms and conditions of auction sale.
-
-Signature:
-Date
-
-
-All enquiries
-Phone Sue or Sharon on 045 797 7000
-Email: theauctionqueens@gmail.com
--->
