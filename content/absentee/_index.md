@@ -22,6 +22,10 @@ While we always endeavour to ensure that all absentee bids are lodged with the A
 
 If your bid is successful and you have provided us with an email address, you will automatically receive a notification email and invoice from us. If not, you must contact us to find out if your bids were successful.
 
-Items must be paid for prior to postage or at pick-up, any post & handling fees will be added to the total. Payment for goods is by Cash, Credit Card (Mastercard, Visa Card, Direct Debit (EFTPOS) or Cheque (by prior arrangement).
+Items must be paid for prior to postage or at pick-up, any post & handling fees will be added to the total. Payment for goods is by Cash, Credit Card (Visa, Mastercard, Direct Debit (EFTPOS), or Cheque (by prior arrangement).
 
-<div class="text-center"><a class="bg-indigo-light border px-6 py-3 rounded-lg shadow-lg hover:shadow-inner text-white text-2xl" href="/absentee/bid/">Place a bid</a></div>
+<p class="mt-12 text-center w-full">
+  <a class="bg-indigo-lighter px-6 py-3 rounded-lg shadow-lg hover:shadow-none text-grey-darkest font-bold text-2xl" href="/absentee/bid/">
+    Place a bid
+  </a>
+</p>
