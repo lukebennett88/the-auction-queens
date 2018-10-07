@@ -1,0 +1,139 @@
+<form class="w-full" name="absentee-bid" action="/success/" method="POST" netlify>
+  <h2>Contact information</h2>
+  <p>If you would like to bid on multiple items, please fill in and submit this form for each item or you could
+    write it in the <a href="#message">message</a> field at the bottom</p>
+    <p class="hidden">
+      <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+    </p>
+
+  <!-- NAME -->
+  <div class="flex flex-wrap mb-6 -mx-3">
+
+    <!-- FIRST NAME -->
+    <div class="mb-6 px-3 w-full md:mb-0 md:w-1/2">
+      <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="first-name">First Name</label>
+      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white" id="first-name" name="first-name" placeholder="Elizabeth" type="text">
+    </div>
+    <!-- END FIRST NAME -->
+
+    <!-- LAST NAME -->
+    <div class="mb-6 px-3 w-full md:mb-0 md:w-1/2">
+      <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="last-name">Last Name</label>
+      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white" id="last-name" name="last-name" placeholder="Mountbatten-Windsor" type="text">
+    </div>
+    <!-- END LAST NAME -->
+
+  </div>
+  <!-- END NAME -->
+
+
+  <!-- ADDRESS -->
+  <div class="flex flex-wrap mb-6 -mx-3">
+
+    <!-- CITY -->
+    <div class="mb-6 px-3 w-full md:mb-0 md:w-2/5">
+      <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="city">
+        City
+      </label>
+      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white" id="city" name="city" placeholder="Port Macquarie" type="text">
+    </div>
+    <!-- END CITY -->
+
+    <!-- STATE -->
+    <div class="mb-6 px-3 w-full md:mb-0 md:w-2/5">
+      <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="state">
+          State
+      </label>
+      <div class="relative">
+        <select class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white" id="state" name="state">
+          <option>New South Wales</option>
+          <option>Victoria</option>
+          <option>Queensland</option>
+          <option>Western Australia</option>
+          <option>South Australia</option>
+          <option>Tasmania</option>
+          <option>Australian Capital Territory</option>
+          <option>Northern Territory</option>
+        </select>
+        <div class="absolute flex items-center px-2 pin-r pin-y pointer-events-none text-grey-darker">
+          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+        </div>
+      </div>
+    </div>
+    <!-- END STATE -->
+
+    <!-- POSTCODE -->
+    <div class="mb-6 px-3 w-full md:mb-0 md:w-1/5">
+      <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="postcode">
+        Postcode
+      </label>
+      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white" id="postcode" name="postcode" placeholder="2444" type="text">
+    </div>
+    <!-- END POSTCODE -->
+
+  </div>
+  <!-- END ADDRESS -->
+
+
+  <!-- CONTACT METHODS -->
+  <div class="flex flex-wrap -mx-3 mb-6">
+
+    <!-- PHONE -->
+    <div class="mb-6 px-3 w-full md:mb-0 md:w-1/2">
+      <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="phone">
+        Phone
+      </label>
+      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white" id="phone" name="phone" placeholder="0400 000 000" type="text">
+    </div>
+    <!-- END PHONE -->
+
+    <!-- EMAIL -->
+    <div class="mb-6 px-3 w-full md:mb-0 md:w-1/2">
+      <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="email">
+        Email
+      </label>
+      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white" id="email" name="email" placeholder="lizzy@england4lyf.co.uk" type="text">
+    </div>
+    <!-- END EMAIL -->
+
+  </div>
+  <!-- END CONTACT METHODS -->
+
+  <!-- MESSAGE -->
+  <div class="flex flex-wrap mb-12 md:mb-6">
+    <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="message">
+      Message
+    </label>
+    <textarea class="appearance-none bg-grey-lighter block border h-48 leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white" id="message" name="message" placeholder="Please leave a detailed description of each item you would like to bid on — including the lot number, lot desctiption and your maximum bid for each item." spellcheck="true"></textarea>
+  </div>
+  <!-- END MESSAGE -->
+
+  <!-- TERMS -->
+  <div class="flex flex-wrap mb-2">
+    <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="message">
+      Terms &amp; Conditions
+    </label>
+    <article class="appearance-none bg-grey-lighter block border h-48 leading-tight overflow-y-scroll p-4 pl-0 rounded scrolling-touch shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white" id="message" name="message">
+      {{ partial "terms" . }}
+    </article>
+  </div>
+  <!-- END TERMS -->
+
+  <!-- CHECKBOX -->
+  <div class="mb-2 text-center w-full">
+    <input name="agree" type="checkbox" value="agree" id="agree">
+    <label class="font-bold mb-2 ml-1 text-grey-darker text-sm tracking-wide uppercase" for="agree" name="agree">
+      I agree to the above Terms & Conditions
+    </label>
+  </div>
+  <!-- END CHECKBOX -->
+
+  <!-- SUBMIT BUTTON -->
+  <div class="text-center w-full">
+    <button class="bg-indigo-lighter px-6 py-3 rounded-lg shadow-lg hover:shadow-none text-grey-darkest font-bold text-2xl" id="submit" name="submit" type="submit">
+      Submit bid
+    </button>
+  </div>
+  <!-- END SUBMIT BUTTON -->
+
+</form>
