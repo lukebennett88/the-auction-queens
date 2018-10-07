@@ -14,7 +14,7 @@ The form tells us the maximum amount you are prepared to bid. Remember that a "B
 
 ## How we use your bid
 
-Lots will be bought as reasonably as is allowed by other bids and any reserves, and in accordance with the [Terms and Conditions](/absentee/bid/#terms) of Auction Sale.
+Lots will be bought as reasonably as is allowed by other bids and any reserves, and in accordance with the [Terms and Conditions](/terms/) of Auction Sale.
 
 While we always endeavour to ensure that all absentee bids are lodged with the Auctioneer and executed, _we accept no liability_.
 
