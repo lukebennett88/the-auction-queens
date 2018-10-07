@@ -6500,7 +6500,13 @@ table {
   z-index: auto;
 }
 
-/*! wysiwyg.css v0.0.3 | MIT License | github.com/jgthms/wysiwyg.css */
+::-moz-selection {
+  background-color: #e6e8ff;
+}
+
+::selection {
+  background-color: #e6e8ff;
+}
 
 body {
   line-height: 1.6;
