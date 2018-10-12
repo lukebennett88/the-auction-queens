@@ -1,3 +1,4 @@
 +++
-title = "Online absentee bid form"
+title = "Absentee bid"
+decription = "Online absentee bid form"
 +++
