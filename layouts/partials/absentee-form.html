@@ -15,7 +15,7 @@
     <div class="mb-6 px-3 w-full md:mb-0 md:w-1/2">
       <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="first-name">First Name</label>
       <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white"
-        id="first-name" name="first-name" placeholder="Elizabeth" type="text">
+        id="first-name" name="first-name" placeholder="Elizabeth" type="text" required>
     </div>
     <!-- END FIRST NAME -->
 
@@ -23,7 +23,7 @@
     <div class="mb-6 px-3 w-full md:mb-0 md:w-1/2">
       <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="last-name">Last Name</label>
       <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white"
-        id="last-name" name="last-name" placeholder="Mountbatten-Windsor" type="text">
+        id="last-name" name="last-name" placeholder="Mountbatten-Windsor" type="text" required>
     </div>
     <!-- END LAST NAME -->
 
@@ -40,7 +40,7 @@
         City
       </label>
       <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white"
-        id="city" name="city" placeholder="Port Macquarie" type="text">
+        id="city" name="city" placeholder="Port Macquarie" type="text" required>
     </div>
     <!-- END CITY -->
 
@@ -75,7 +75,8 @@
         Postcode
       </label>
       <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white"
-        id="postcode" name="postcode" placeholder="2444" type="text">
+        id="postcode" name="postcode" placeholder="2444" type="text" inputmode="numeric" pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$"
+        required>
     </div>
     <!-- END POSTCODE -->
 
@@ -92,7 +93,7 @@
         Phone
       </label>
       <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white"
-        id="phone" name="phone" placeholder="0400 000 000" type="text">
+        id="phone" name="phone" placeholder="0400 000 000" type="text" required>
     </div>
     <!-- END PHONE -->
 
@@ -102,7 +103,7 @@
         Email
       </label>
       <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white"
-        id="email" name="email" placeholder="lizzy@england4lyf.co.uk" type="text">
+        id="email" name="email" placeholder="corgilover69@hotmail.co.uk" type="text" required>
     </div>
     <!-- END EMAIL -->
 
@@ -116,7 +117,7 @@
     </label>
     <textarea class="appearance-none bg-grey-lighter block border h-48 leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white"
       id="message" name="message" placeholder="Please leave a detailed description of each item you would like to bid on — including the lot number, lot desctiption and your maximum bid for each item."
-      spellcheck="true"></textarea>
+      spellcheck="true" required></textarea>
   </div>
   <!-- END MESSAGE -->
 
