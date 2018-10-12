@@ -1,3 +1,3 @@
 +++
-title  = "Terms & Condition"
+title = "Terms & Condition"
 +++

@@ -1,6 +1,6 @@
 +++
-title  = "Absentee bid"
-menu   = "main"
+title = "Absentee bid"
+menu = "main"
 weight = 4
 +++
 

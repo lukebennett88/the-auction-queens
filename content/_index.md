@@ -1,6 +1,6 @@
 +++
-title  = "Home"
+title = "Home"
 description = "Servicing the entire Mid North Coast"
-menu   = "main"
+menu = "main"
 weight = 1
 +++

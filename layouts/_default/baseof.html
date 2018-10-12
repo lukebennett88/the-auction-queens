@@ -6,32 +6,60 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-  <title>{{ block "title" . }}{{ if .Title }}{{ .Site.Title }} | {{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}{{ end }}</title>
-  <meta id="description" name="description" content="{{ block "description" . }}{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.SiteDescription }}{{ end }}{{ end }}">
+  <title>
+  {{- block "title" . }}
+  {{- if .Title }}
+  {{- .Title }} | {{ .Site.Title }}
+  {{- else }}
+  {{- .Site.Title }}
+  {{- end }}
+  {{- end -}}
+    </title>
+  <meta id="description" name="description" content="
+  {{- block "description" . }}
+  {{- if .Description }}
+  {{- .Description }}
+  {{- else }}
+  {{- .Site.Params.SiteDescription }}
+  {{- end }}
+  {{- end -}}">
 
   {{ "<!-- SEO -->" | safeHTML }}
   <meta name="robots" content="index, follow">
   {{ .Hugo.Generator }}
   <link rel="canonical" href="{{ .URL | absURL }}">
   <meta property="og:site_name" content="{{ .Site.Title }}">
-  <meta property="og:title" content="{{ if eq .IsHome true }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
+  <meta property="og:title" content="
+  {{- if eq .IsHome true }}
+  {{- .Site.Title }}
+  {{- else }}
+  {{- .Title }} | {{ .Site.Title }}
+  {{- end }}">
   <meta property="og:url" content="{{ .URL | absURL }}">
-  <meta property="og:type" content="{{ if eq .Type "page" }}website{{ else }}article{{ end }}">
-  <meta property="og:description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.siteDescription }}{{ end }}">
-  <meta property="og:image" content="{{ if eq .Type "page" }}{{ .Site.BaseURL }}img/logo.png{{ else }}{{ .Site.BaseURL }}img/{{ .Params.photo }}{{ end }}">
+  <meta property="og:type" content="
+  {{- if eq .Type "page" -}}
+  website
+  {{- else -}}
+  article
+  {{- end }}">
+  <meta property="og:description" content="
+  {{- if ne .Description "" }}
+  {{- .Description }}
+  {{- else }}
+  {{- .Site.Params.siteDescription }}
+  {{- end }}">
+  <meta property="og:image" content="
+  {{- if ne .Type "page" }}
+  {{- .Site.BaseURL }}img/logo.png
+  {{- else }}
+  {{- .Site.BaseURL }}img/{{ .Params.photo }}
+  {{- end }}">
 
   {{ "<!-- Favicons -->" | safeHTML }}
   <link rel="icon" type="image/png" href="{{ .Site.BaseURL }}img/favicon.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon-180x180.png">
 
-  {{ "<!-- Styles -->" | safeHTML }}
-  {{- if .Site.IsServer -}}
-  {{ $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/dev/postcss.config.js") | fingerprint }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}" data>
-  {{- else -}}
-  {{ $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js") | minify | fingerprint }}
-  <style>{{ $style.Content | safeCSS }}</style>
-  {{ end }}
+  {{ partial "stylesheet" . }}
   {{- block "head" . }}{{ end }}
 </head>
 
