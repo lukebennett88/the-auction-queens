@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:900|Rubik:400,400i,700,700i");
-@import "components/nav.css";
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900|Rubik:400,400i,700,700i');
+@import 'components/nav.css';
 
 .golden-ratio {
   --ratio: 1.618;
@@ -11,4 +11,8 @@
 
 .upside-down {
   transform: rotate(180deg);
+}
+
+body {
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
 }
