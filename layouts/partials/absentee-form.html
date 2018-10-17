@@ -1,12 +1,4 @@
 <form class="w-full" name="absentee-bid" action="/success/" method="POST" autocomplete="on" netlify>
-  <h2>Contact information</h2>
-  <p>If you would like to bid on multiple items, please fill in and submit this form for each item or you could
-    write it in the <a href="#message">message</a> field at the bottom</p>
-  <p class="hidden">
-    <label>Don’t fill this out if you're human:
-      <input name="bot-field">
-    </label>
-  </p>
 
   <!-- NAME -->
   <div class="flex flex-wrap mb-6 -mx-3">
@@ -140,6 +132,12 @@
     </label>
   </div>
   <!-- END CHECKBOX -->
+
+  <div class="hidden">
+    <label>Don’t fill this out if you're human:
+      <input name="bot-field">
+    </label>
+  </div>
 
   <!-- SUBMIT BUTTON -->
   <div class="text-center w-full">
