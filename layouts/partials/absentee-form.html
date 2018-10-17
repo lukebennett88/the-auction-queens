@@ -1,4 +1,4 @@
-<form class="w-full" name="absentee-bid" action="/success/" method="POST" netlify>
+<form class="w-full" name="absentee-bid" action="/success/" method="POST" autocomplete="on" netlify>
   <h2>Contact information</h2>
   <p>If you would like to bid on multiple items, please fill in and submit this form for each item or you could
     write it in the <a href="#message">message</a> field at the bottom</p>
@@ -13,15 +13,15 @@
 
     <!-- FIRST NAME -->
     <div class="mb-6 px-3 w-full md:mb-0 md:w-1/2">
-      <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="first-name">First Name</label>
-      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white" id="first-name" name="first-name" type="text" placeholder="Elizabeth" required>
+      <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="fname">First Name</label>
+      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white  hover:shadow" id="fname" name="fname" type="text" placeholder="Elizabeth" autocomplete="given-name" required>
     </div>
     <!-- END FIRST NAME -->
 
     <!-- LAST NAME -->
     <div class="mb-6 px-3 w-full md:mb-0 md:w-1/2">
-      <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="last-name">Last Name</label>
-      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white" id="last-name" name="last-name" type="text" placeholder="Mountbatten-Windsor" required>
+      <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="lname">Last Name</label>
+      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white  hover:shadow" id="lname" name="lname" type="text" placeholder="Mountbatten-Windsor" autocomplete="family-name" required>
     </div>
     <!-- END LAST NAME -->
 
@@ -32,12 +32,21 @@
   <!-- ADDRESS -->
   <div class="flex flex-wrap mb-6 -mx-3">
 
+    <!-- STREET -->
+    <div class="mb-6 px-3 w-full">
+      <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="address">
+        Street
+      </label>
+      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white  hover:shadow" id="address" name="address" type="text" placeholder="1 Queen Street" autocomplete="street-address" required>
+    </div>
+    <!-- END STREET -->
+
     <!-- CITY -->
     <div class="mb-6 px-3 w-full md:mb-0 md:w-2/5">
       <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="city">
         City
       </label>
-      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white" id="city" name="city" type="text" placeholder="Port Macquarie" required>
+      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white  hover:shadow" id="city" name="city" type="text" placeholder="Port Macquarie" autocomplete="address-level2" required>
     </div>
     <!-- END CITY -->
 
@@ -47,7 +56,7 @@
         State
       </label>
       <div class="relative">
-        <select class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white" id="state" name="state">
+        <select class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white  hover:shadow" id="state" name="state" autocomplete="address-level1">
           <option>New South Wales</option>
           <option>Victoria</option>
           <option>Queensland</option>
@@ -68,10 +77,10 @@
 
     <!-- POSTCODE -->
     <div class="mb-6 px-3 w-full md:mb-0 md:w-1/5">
-      <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="postcode">
+      <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="postal">
         Postcode
       </label>
-      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white" id="postcode" name="postcode" type="text" placeholder="2444" inputmode="numeric" pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$" required>
+      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white  hover:shadow" id="postal" name="postal" type="text" placeholder="2444" inputmode="numeric" pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$" autocomplete="postal-code" required>
     </div>
     <!-- END POSTCODE -->
 
@@ -87,7 +96,7 @@
       <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="phone">
         Phone
       </label>
-      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white" id="phone" name="phone" type="text" placeholder="0400 000 000" required>
+      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white  hover:shadow" id="phone" name="phone" type="text" placeholder="0400 000 000" required>
     </div>
     <!-- END PHONE -->
 
@@ -96,7 +105,7 @@
       <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="email">
         Email
       </label>
-      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white" id="email" name="email" type="text" placeholder="corgilover69@hotmail.co.uk" required>
+      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white  hover:shadow" id="email" name="email" type="text" placeholder="corgilover69@hotmail.co.uk" autocomplete="tel" required>
     </div>
     <!-- END EMAIL -->
 
@@ -108,7 +117,7 @@
     <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="message">
       Message
     </label>
-    <textarea class="appearance-none bg-grey-lighter block border h-48 leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white" id="message" name="message" placeholder="Please leave a detailed description of each item you would like to bid on — including the lot number, lot desctiption and your maximum bid for each item." spellcheck="true" required></textarea>
+    <textarea class="appearance-none bg-grey-lighter block border h-48 leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white  hover:shadow" id="message" name="message" placeholder="Please leave a detailed description of each item you would like to bid on — including the lot number, lot desctiption and your maximum bid for each item." spellcheck="true" required></textarea>
   </div>
   <!-- END MESSAGE -->
 
@@ -117,7 +126,7 @@
     <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="terms">
       Terms &amp; Conditions
     </label>
-    <article class="appearance-none bg-grey-lighter block border h-48 leading-tight overflow-y-scroll p-4 pl-0 rounded scrolling-touch shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white" id="terms" name="terms">
+    <article class="appearance-none bg-grey-lighter block border h-48 leading-tight overflow-y-scroll p-4 pl-0 rounded scrolling-touch shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white  hover:shadow" id="terms" name="terms">
       {{ partial "terms" . }}
     </article>
   </div>
