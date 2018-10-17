@@ -4,7 +4,7 @@
     write it in the <a href="#message">message</a> field at the bottom</p>
   <p class="hidden">
     <label>Don’t fill this out if you're human:
-      <input name="bot-field" />
+      <input name="bot-field">
     </label>
   </p>
 
@@ -14,14 +14,14 @@
     <!-- FIRST NAME -->
     <div class="mb-6 px-3 w-full md:mb-0 md:w-1/2">
       <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="first-name">First Name</label>
-      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white" id="first-name" name="first-name" placeholder="Elizabeth" type="text" required>
+      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white" id="first-name" name="first-name" type="text" placeholder="Elizabeth" required>
     </div>
     <!-- END FIRST NAME -->
 
     <!-- LAST NAME -->
     <div class="mb-6 px-3 w-full md:mb-0 md:w-1/2">
       <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="last-name">Last Name</label>
-      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white" id="last-name" name="last-name" placeholder="Mountbatten-Windsor" type="text" required>
+      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white" id="last-name" name="last-name" type="text" placeholder="Mountbatten-Windsor" required>
     </div>
     <!-- END LAST NAME -->
 
@@ -37,7 +37,7 @@
       <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="city">
         City
       </label>
-      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white" id="city" name="city" placeholder="Port Macquarie" type="text" required>
+      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white" id="city" name="city" type="text" placeholder="Port Macquarie" required>
     </div>
     <!-- END CITY -->
 
@@ -59,7 +59,8 @@
         </select>
         <div class="absolute flex items-center px-2 pin-r pin-y pointer-events-none text-grey-darker">
           <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
+            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path>
+          </svg>
         </div>
       </div>
     </div>
@@ -70,7 +71,7 @@
       <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="postcode">
         Postcode
       </label>
-      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white" id="postcode" name="postcode" placeholder="2444" type="text" inputmode="numeric" pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$" required>
+      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white" id="postcode" name="postcode" type="text" placeholder="2444" inputmode="numeric" pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$" required>
     </div>
     <!-- END POSTCODE -->
 
@@ -86,7 +87,7 @@
       <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="phone">
         Phone
       </label>
-      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white" id="phone" name="phone" placeholder="0400 000 000" type="text" required>
+      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white" id="phone" name="phone" type="text" placeholder="0400 000 000" required>
     </div>
     <!-- END PHONE -->
 
@@ -95,7 +96,7 @@
       <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="email">
         Email
       </label>
-      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white" id="email" name="email" placeholder="corgilover69@hotmail.co.uk" type="text" required>
+      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white" id="email" name="email" type="text" placeholder="corgilover69@hotmail.co.uk" required>
     </div>
     <!-- END EMAIL -->
 
@@ -124,8 +125,8 @@
 
   <!-- CHECKBOX -->
   <div class="mb-2 text-center w-full">
-    <input name="agree" type="checkbox" value="agree" id="agree" required>
-    <label class="font-bold mb-2 ml-1 text-grey-darker text-sm tracking-wide uppercase" for="agree" name="agree">
+    <input id="agree" name="agree" type="checkbox" value="agree" required>
+    <label class="font-bold mb-2 ml-1 text-grey-darker text-sm tracking-wide uppercase" name="agree" for="agree">
       I agree to the above Terms & Conditions
     </label>
   </div>
