@@ -39,7 +39,7 @@
   {{- end }}
   ">
   <meta name="twitter:description" property="og:description" content="{{ .Site.Params.siteDescription }}">
-  <meta name="twitter:image" property="og:image" content="{{ .Site.Params.hero }}">
+  <meta name="twitter:image" property="og:image" content="{{ .URL | absURL }}img/favicon.png">
 
   <!-- Favicons -->
   <link rel="icon" type="image/png" href="{{ .URL | absURL }}img/favicon.png">
