@@ -7,14 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
   <title>
-  {{- block "title" . }}
-  {{- if .Title }}
-  {{- .Title }} | {{ .Site.Title }}
-  {{- else }}
-  {{- .Site.Title }}
-  {{- end }}
-  {{- end -}}
-    </title>
+    {{- block "title" . }}
+    {{- if .Title }}
+    {{- .Title }} | {{ .Site.Title }}
+    {{- else }}
+    {{- .Site.Title }}
+    {{- end }}
+    {{- end -}}
+  </title>
   <meta id="description" name="description" content="
   {{- block "description" . }}
   {{- if .Description }}
@@ -24,40 +24,26 @@
   {{- end }}
   {{- end -}}">
 
-  {{ "<!-- SEO -->" | safeHTML }}
+  <!-- SEO -->
   <meta name="robots" content="index, follow">
   {{ .Hugo.Generator }}
   <link rel="canonical" href="{{ .URL | absURL }}">
-  <meta property="og:site_name" content="{{ .Site.Title }}">
-  <meta property="og:title" content="
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="{{ .Site.Params.twitter }}">
+  <meta name="twitter:url" property="og:url" content="{{ .URL | absURL }}">
+  <meta name="twitter:title" property="og:title" content="
   {{- if eq .IsHome true }}
   {{- .Site.Title }}
   {{- else }}
   {{- .Title }} | {{ .Site.Title }}
-  {{- end }}">
-  <meta property="og:url" content="{{ .URL | absURL }}">
-  <meta property="og:type" content="
-  {{- if eq .Type "page" -}}
-  website
-  {{- else -}}
-  article
-  {{- end }}">
-  <meta property="og:description" content="
-  {{- if ne .Description "" }}
-  {{- .Description }}
-  {{- else }}
-  {{- .Site.Params.siteDescription }}
-  {{- end }}">
-  <meta property="og:image" content="
-  {{- if ne .Type "page" }}
-  {{- .Site.BaseURL }}img/logo.png
-  {{- else }}
-  {{- .Site.BaseURL }}img/{{ .Params.photo }}
-  {{- end }}">
+  {{- end }}
+  ">
+  <meta name="twitter:description" property="og:description" content="{{ .Site.Params.siteDescription }}">
+  <meta name="twitter:image" property="og:image" content="{{ .Site.Params.hero }}">
 
-  {{ "<!-- Favicons -->" | safeHTML }}
-  <link rel="icon" type="image/png" href="{{ .Site.BaseURL }}img/favicon.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon-180x180.png">
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="{{ .URL | absURL }}img/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ .URL | absURL }}img/apple-touch-icon-180x180.png">
 
   {{ partial "stylesheet" . }}
   {{- block "head" . }}{{ end }}
