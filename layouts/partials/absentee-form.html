@@ -72,7 +72,7 @@
       <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="postal">
         Postcode
       </label>
-      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white  hover:shadow" id="postal" name="postal" type="text" placeholder="2444" inputmode="numeric" pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$" autocomplete="postal-code" required>
+      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white  hover:shadow" id="postal" name="postal" type="text" placeholder="2444" inputmode="numeric" pattern="^[0-9]*$" autocomplete="postal-code" minlength="4" maxlength="4" required>
     </div>
     <!-- END POSTCODE -->
 
