@@ -9,7 +9,7 @@
 {{- if not $sc.DisableInlineCSS -}}
 {{- end -}}
 <figure class="mb-0" style="max-width: {{ $item.thumbnail_width }}px">
-  <img src="{{ $item.thumbnail_url }}" width="{{ $item.thumbnail_width }}"  height="{{ $item.thumbnail_height }}" alt="">
+  <img src="{{ $item.thumbnail_url }}" width="{{ $item.thumbnail_width }}" height="{{ $item.thumbnail_height }}" alt="">
   <figcaption class="text-base">
     {{ if not $hideCaption }}<p>{{ $item.title}}</p>{{ end }}
   </figcaption>
