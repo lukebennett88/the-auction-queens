@@ -1,5 +1,7 @@
 +++
-title       = "{{ replace .Name "-" " " | title }}"
+title = "{{ replace .Name "-" " " | title }}"
 description = ""
-date        = {{ .Date }}
+date = {{ .Date }}
+type = ""
+layout = ""
 +++
