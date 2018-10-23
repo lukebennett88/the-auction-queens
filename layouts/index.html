@@ -20,14 +20,8 @@
 {{ end }}
 
 {{ define "script" }}
-<script src="js/siema.min.js" async></script>
-<script>
-  const mySiema = new Siema({
-    duration: 500,
-    loop: true,
-  });
-  setInterval(() => mySiema.next(), 3500)
-</script>
+<script src="js/siema.min.js"></script>
+<script src="js/index.js"></script>
 <script async>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {
