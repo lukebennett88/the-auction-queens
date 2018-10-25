@@ -693,24 +693,24 @@ table {
 }
 
 .navicon {
+  width: 18px;
   height: 2px;
   -webkit-transition: background .2s ease-in-out;
   -o-transition: background .2s ease-in-out;
   transition: background .2s ease-in-out;
-  width: 18px;
 }
 
 .navicon:before,
 .navicon:after {
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  content: '';
   position: absolute;
   background-color: #606f7b;
   display: block;
   height: 100%;
   width: 100%;
-  content: '';
-  -webkit-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
 }
 
 .navicon:before {
@@ -759,8 +759,8 @@ table {
   }
 
   .nav .menu {
-    clear: none;
     display: block !important;
+    clear: none;
   }
 }
 
@@ -769,8 +769,8 @@ table {
   --height: 30rem;
   --width: -webkit-calc(var(--height) / var(--ratio));
   --width: calc(var(--height) / var(--ratio));
-  height: var(--height);
   width: var(--width);
+  height: var(--height);
 }
 
 .upside-down {
@@ -6533,12 +6533,12 @@ cite {
 }
 
 hr {
-  background: #e6e6e6;
-  border: none;
   display: block;
   height: 1px;
-  margin-bottom: 1.4em;
   margin-top: 1.4em;
+  margin-bottom: 1.4em;
+  border: none;
+  background: #e6e6e6;
 }
 
 img {
@@ -6620,42 +6620,42 @@ h6:first-child {
 }
 
 h1 {
-  font-family: Playfair Display, Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
-  font-size: 2.4em;
-  margin-bottom: .58333em;
   margin-top: .58333em;
+  margin-bottom: .58333em;
+  font-size: 2.4em;
   line-height: 1;
+  font-family: Playfair Display, Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
 }
 
 h2 {
-  font-size: 1.6em;
-  margin-bottom: .875em;
   margin-top: 1.75em;
+  margin-bottom: .875em;
+  font-size: 1.6em;
   line-height: 1.1;
 }
 
 h3 {
-  font-size: 1.3em;
-  margin-bottom: 1.07692em;
   margin-top: 1.07692em;
+  margin-bottom: 1.07692em;
+  font-size: 1.3em;
 }
 
 h4 {
-  font-size: 1.2em;
-  margin-bottom: 1.16667em;
   margin-top: 1.16667em;
+  margin-bottom: 1.16667em;
+  font-size: 1.2em;
 }
 
 h5 {
-  font-size: 1.1em;
-  margin-bottom: 1.27273em;
   margin-top: 1.27273em;
+  margin-bottom: 1.27273em;
+  font-size: 1.1em;
 }
 
 h6 {
-  font-size: 1em;
-  margin-bottom: 1.4em;
   margin-top: 1.4em;
+  margin-bottom: 1.4em;
+  font-size: 1em;
 }
 
 dd {
@@ -6664,8 +6664,8 @@ dd {
 
 ol,
 ul {
-  list-style-position: outside;
   margin-left: 1.4em;
+  list-style-position: outside;
 }
 
 ol {
@@ -6717,8 +6717,8 @@ ul ul ul ul ul ul {
 }
 
 blockquote {
-  border-left: 4px solid #e6e6e6;
   padding: .6em 1.2em;
+  border-left: 4px solid #e6e6e6;
 }
 
 blockquote p {
@@ -6729,25 +6729,25 @@ code,
 kbd,
 samp,
 pre {
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: auto;
   background-color: #f2f2f2;
   color: #333;
   font-size: .9em;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
 }
 
 code,
 kbd,
 samp {
+  padding: .1em .4em .2em;
   border-radius: 3px;
   line-height: 1.77778;
-  padding: .1em .4em .2em;
   vertical-align: baseline;
 }
 
 pre {
-  overflow: auto;
   padding: 1em 1.2em;
+  overflow: auto;
 }
 
 pre code {
@@ -6770,8 +6770,8 @@ figure:last-child {
 }
 
 figcaption {
-  font-size: .8em;
   margin-top: .875em;
+  font-size: .8em;
   text-align: left;
 }
 
@@ -6785,9 +6785,9 @@ table pre {
 
 th,
 td {
-  font-size: 1em;
   padding: .7em;
   border: 1px solid #e6e6e6;
+  font-size: 1em;
   line-height: 1.4;
 }
 
@@ -6800,8 +6800,8 @@ thead th,
 thead td,
 tfoot th,
 tfoot td {
-  font-size: .9em;
   padding: .77778em;
+  font-size: .9em;
 }
 
 thead th code,

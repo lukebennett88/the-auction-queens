@@ -4,5 +4,7 @@
 <link rel="stylesheet" href="{{ $style.Permalink }}" data>
 {{- else -}}
 {{ $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js") | minify | fingerprint }}
-<style>{{ $style.Content | safeCSS }}</style>
+<style>
+  {{- $style.Content | safeCSS -}}
+</style>
 {{ end }}

@@ -5,8 +5,8 @@
   --ratio: 1.618;
   --height: 30rem;
   --width: calc(var(--height) / var(--ratio));
-  height: var(--height);
   width: var(--width);
+  height: var(--height);
 }
 
 .upside-down {
