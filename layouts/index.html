@@ -2,25 +2,18 @@
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" async></script>
 {{ end }}
 
+
 {{ define "main" }}
 <main class="bg-white border rounded-lg shadow-lg max-w-lg my-8 px-4 py-8 mx-auto w-full">
   <div class="max-w-md mx-auto">
-    <h1>Next Auction</h1>
-    {{ partial "carousel" . }}
-
-    <section>
-      <h1>About</h1>
-      <p>The Auction Queens are Sue & Sharon — two friends with a passion for antiques and collectables.</p>
-      <p>Operating since 2014, they have established themselves as one of the most trusted Auction Houses on the Mid North Coast.</p>
-      {{ partial "sue" . }}
-      {{ partial "sharon" . }}
-    </section>
+    <h1>{{ .Site.Title }}</h1>
+    {{ partial "next-auction" . }}
+    {{ partial "gallery" . }}
+    {{ partial "about" . }}
   </div>
-
-
 </main>
-
 {{ end }}
+
 
 {{ define "script" }}
 <script src="js/siema.min.js"></script>
