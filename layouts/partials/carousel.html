@@ -1,10 +1,10 @@
 <section class="mb-8">
   <p>Below is a gallery of items from our upcoming auction</p>
   {{ with .Resources.ByType "image" }}
-  <div class="siema">
+  <div class="siema bg-indigo-lightest border rounded-lg shadow-inner">
     {{ range . }}
-    <div class="bg-grey-lightest border mr-2 p-2 rounded-lg">
-      <img class="border rounded" src="{{ .RelPermalink }}" alt="">
+    <div class="bg-white border m-2 p-3 rounded-lg shadow hover:shadow-lg">
+      <img class="border" src="{{ .RelPermalink }}" alt="">
     </div>
     {{ end }}
   </div>
