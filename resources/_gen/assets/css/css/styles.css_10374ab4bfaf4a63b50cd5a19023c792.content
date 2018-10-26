@@ -618,12 +618,6 @@ textarea::-moz-placeholder {
   opacity: .5;
 }
 
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
-  color: inherit;
-  opacity: .5;
-}
-
 input::placeholder,
 textarea::placeholder {
   color: inherit;
