@@ -1,8 +1,8 @@
 {
-  "main": "index.js",
-  "scripts": {
-    "start": "hugo --gc --minify",
-    "develop": "hugo server -D"
+  "author": {
+    "email": "luke.bennett88@gmail.com",
+    "name": "Luke Bennett",
+    "url": "https://lukebennett.me"
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^1.1.0",
@@ -11,5 +11,14 @@
     "postcss-cli": "^6.0.0",
     "postcss-import": "^12.0.0",
     "tailwindcss": "^0.6.6"
+  },
+  "description": "Website for The Auction Queens",
+  "license": "MIT",
+  "main": "index.js",
+  "name": "the-auction-queens",
+  "repository": "https://github.com/lukebennett88/the-auction-queens",
+  "scripts": {
+    "develop": "hugo server -D",
+    "start": "hugo --gc --minify"
   }
 }
