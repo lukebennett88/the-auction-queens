@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:900|Rubik:400,400i,700,700i');
 @import 'components/nav.css';
 
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
 .golden-ratio {
   --ratio: 1.618;
   --height: 30rem;
@@ -17,6 +21,6 @@ body {
   background: linear-gradient(
     62deg,
     rgba(224, 195, 252, 1) 0%,
-    rgba(142, 197, 252, 1) 100%
+    rgba(142, 197, 252 1) 100%
   );
 }
