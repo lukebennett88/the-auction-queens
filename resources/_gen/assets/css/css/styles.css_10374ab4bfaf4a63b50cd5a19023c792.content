@@ -758,6 +758,10 @@ table {
   }
 }
 
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
 .golden-ratio {
   --ratio: 1.618;
   --height: 30rem;
