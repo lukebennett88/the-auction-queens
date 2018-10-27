@@ -779,9 +779,9 @@ table {
 }
 
 body {
-  background: -webkit-linear-gradient(28deg, rgba(224, 195, 252, 1) 0%, rgba(142, 197, 252, 1) 100%);
-  background: -o-linear-gradient(28deg, rgba(224, 195, 252, 1) 0%, rgba(142, 197, 252, 1) 100%);
-  background: linear-gradient(62deg, rgba(224, 195, 252, 1) 0%, rgba(142, 197, 252, 1) 100%);
+  background: -webkit-linear-gradient(28deg, rgba(224, 195, 252, 1) 0%, rgba(142, 197, 252 1) 100%);
+  background: -o-linear-gradient(28deg, rgba(224, 195, 252, 1) 0%, rgba(142, 197, 252 1) 100%);
+  background: linear-gradient(62deg, rgba(224, 195, 252, 1) 0%, rgba(142, 197, 252 1) 100%);
 }
 
 .list-reset {
