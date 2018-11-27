@@ -3,26 +3,24 @@ backend:
   accept_roles: #optional - accepts all users if left out
     # - admin
     # - editor
-  repo: lukebennett88/the-auction-queens # Path to your Github repository
+  repo: lukebennett88/hugo-boilerplate # Path to your Github repository
   branch: master # Branch to update (master by default)
 
-# publish_mode: editorial_workflow
+publish_mode: editorial_workflow
 
 media_folder: "/static/img/uploads" # Folder where user uploaded files should go
 public_folder: "/img/uploads"
 
 collections:
-  - name: "auctions" # Post type identifier, used in routes. Must be unique.
-    label: "Auctions" # Used in the UI, ie.: "New Post"
-    label_singular: "Auction"
-    folder: "/content/auctions/" # The path to the folder where the documents are stored
+  - name: "post" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog" # Used in the UI
+    folder: "/content/blog" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}_{{slug}}" # Template for filenames. {{year}}, {{month}}, and {{day}} pulls from the post's date field or save date. {{slug}} is a url-safe version of the post's title. Default is simply {{slug}}.
-    extension: md
-    format: toml-frontmatter
-    fields: # The fields each document in this collection have
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Intro Blurb", name: "description", widget: "text" }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "single" }
       - { label: "Body", name: "body", widget: "markdown" }
-      # - { label: "Draft", name: "draft", widget: "boolean", default: true }

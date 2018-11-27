@@ -1,59 +1,17 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode | default "en" }}">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+{{ partial "head" . }}
 
-  <title>
-    {{- block "title" . }}
-    {{- if .Title }}
-    {{- .Title }} | {{ .Site.Title }}
-    {{- else }}
-    {{- .Site.Title }}
-    {{- end }}
-    {{- end -}}
-  </title>
-  <meta id="description" name="description" content="
-  {{- block "description" . }}
-  {{- if .Description }}
-  {{- .Description }}
-  {{- else }}
-  {{- .Site.Params.SiteDescription }}
-  {{- end }}
-  {{- end -}}">
-
-  <!-- SEO -->
-  <meta name="robots" content="index, follow">
-  {{ .Hugo.Generator }}
-  <link rel="canonical" href="{{ .URL | absURL }}">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="{{ .Site.Params.twitter }}">
-  <meta name="twitter:url" property="og:url" content="{{ .URL | absURL }}">
-  <meta name="twitter:title" property="og:title" content="
-  {{- if eq .IsHome true }}
-  {{- .Site.Title }}
-  {{- else }}
-  {{- .Title }} | {{ .Site.Title }}
-  {{- end }}
-  ">
-  <meta name="twitter:description" property="og:description" content="{{ .Site.Params.siteDescription }}">
-  <meta name="twitter:image" property="og:image" content="{{ .URL | absURL }}img/favicon.png">
-
-  <!-- Favicons -->
-  <link rel="icon" type="image/png" href="{{ .URL | absURL }}img/favicon.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ .URL | absURL }}img/apple-touch-icon-180x180.png">
-
-  {{ partial "stylesheet" . }}
-  {{- block "head" . }}{{ end }}
-</head>
-
-<body class="antialiased bg-indigo-lightest absolute flex flex-col font-sans items-center justify-between min-h-screen pt-2 px-2 text-lg text-grey-darkest w-screen">
-  {{ partial "nav" . }}
-  {{ block "main" . }}{{ end }}
+<body class="antialiased bg-indigo-lightest font-sans text-grey-darkest text-lg">
+  <main class="bg-white flex flex-col max-w-lg lg:my-8 mx-auto md:rounded-lg shadow-lg w-full">
+    {{ partial "header" . }}
+    <section class="max-w-md mt-8 mx-auto px-4 py-8 w-full">
+      {{ block "main" . }}{{ end }}
+    </section>
+  </main>
   {{ partial "footer" . }}
-  {{- block "script" . }}{{ end }}
+  {{ block "script" . }}{{ end }}
 </body>
 
 </html>

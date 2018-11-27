@@ -1,19 +1,16 @@
 {{ define "head" }}
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js" async></script>
+<script
+  src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+  async
+></script>
 {{ end }}
-
 
 {{ define "main" }}
-<main class="bg-white border rounded-lg shadow-lg max-w-lg my-8 px-4 py-8 mx-auto w-full">
-  <div class="max-w-md mx-auto">
-    <h1>{{ .Site.Title }}</h1>
-    {{ partial "next-auction" . }}
-    {{ partial "gallery" . }}
-    {{ partial "about" . }}
-  </div>
-</main>
+<h1>{{ .Site.Title }}</h1>
+{{ partial "next-auction" . }}
+{{ partial "gallery" . }}
+{{ partial "about" . }}
 {{ end }}
-
 
 {{ define "script" }}
 <script src="js/siema.min.js"></script>

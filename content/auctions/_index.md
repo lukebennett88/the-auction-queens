@@ -1,7 +1,6 @@
 +++
 title  = "Auctions"
+identifier = "Contact"
 menu   = "main"
-weight = 3
-type = "auction"
-layout = "auctions"
+weight = 2
 +++

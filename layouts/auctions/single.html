@@ -2,5 +2,8 @@
 <h1>
   <a href="{{ .URL }}">{{ .Title }}</a>
 </h1>
-{{ partial "card" . }}
+{{ .Content }}
+<hr />
+<br />
+{{ partial "absentee-form" . }}
 {{ end }}

@@ -1,4 +1,4 @@
-# baseurl           = "https://theauctionqueens.com.au/"
+baseurl           = ""
 disableKinds      = ["RSS", "taxonomy", "taxonomyTerm"]
 languageCode      = "en-AU"
 title             = "The Auction Queens"
