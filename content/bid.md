@@ -1,8 +1,9 @@
 +++
-title = "Absentee bid"
 decription = "Online absentee bid form"
-type = "bid"
 layout = "single"
+title = "Absentee bid"
+type = "bid"
+
 +++
 
 ## Contact information

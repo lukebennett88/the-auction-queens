@@ -1,8 +1,9 @@
 +++
-title  = "Johns River Hall"
 date = "Sunday 19th of August"
-type = "auctions"
 layout = "auction"
+title = "Johns River Hall"
+type = "auctions"
+
 +++
 
 Sunday 19th of August

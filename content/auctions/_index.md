@@ -1,6 +1,7 @@
 +++
-title  = "Auctions"
 identifier = "Contact"
-menu   = "main"
+menu = "main"
+title = "Auctions"
 weight = 2
+
 +++

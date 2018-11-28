@@ -1,8 +1,9 @@
 +++
-title  = "Taree Showground"
 date = "Sunday 16th of September"
-type = "auctions"
 layout = "auction"
+title = "Taree Showground"
+type = "auctions"
+
 +++
 
 Sunday 16th of September

@@ -1,5 +1,6 @@
 +++
 title = "Success"
+
 +++
 
 ## Your bid was submitted

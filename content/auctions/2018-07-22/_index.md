@@ -1,8 +1,9 @@
 +++
-title  = "Kempsey Showground"
 date = "Sunday 22nd of July"
-type = "auctions"
 layout = "auction"
+title = "Kempsey Showground"
+type = "auctions"
+
 +++
 
 Sunday 22nd of July

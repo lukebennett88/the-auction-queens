@@ -1,9 +1,10 @@
 +++
-title = "Contact"
-identifier = "Contact"
 description = "Contact information for The Auction Queens"
-menu = "main"
-weight = 1
-type = "contact"
+identifier = "Contact"
 layout = "single"
+menu = "main"
+title = "Contact"
+type = "contact"
+weight = 1
+
 +++

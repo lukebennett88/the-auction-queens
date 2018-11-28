@@ -1,8 +1,9 @@
 +++
-title = "Absentee bid"
 identifier = "Absentee bid"
 menu = "main"
+title = "Absentee bid"
 weight = 3
+
 +++
 
 If you cannot attend the sale, you can place an _Absentee Bid_ before the sale begins. This is a free and confidential service.
