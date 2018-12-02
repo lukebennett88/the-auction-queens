@@ -26,8 +26,6 @@ If your bid is successful and you have provided us with an email address, you wi
 
 Items must be paid for prior to postage or at pick-up, any post & handling fees will be added to the total. Payment for goods is by Cash, Credit Card (Visa, Mastercard, Direct Debit (EFTPOS), or Cheque (by prior arrangement).
 
-<p class="mt-12 text-center w-full">
-  <a class="bg-indigo-lighter px-6 py-3 rounded-lg shadow-lg hover:shadow-none text-grey-darkest hover:text-grey-darkest font-bold text-2xl" href="/bid/">
-    Place a bid
-  </a>
+<p class="text-center w-full">
+  <a class="btn" href="/bid/">Place a bid</a>
 </p>
