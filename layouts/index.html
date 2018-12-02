@@ -1,15 +1,12 @@
 {{ define "head" }}
-<script
-  src="https://identity.netlify.com/v1/netlify-identity-widget.js"
-  async
-></script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js" async></script>
 {{ end }}
 
 {{ define "main" }}
-<h1>{{ .Site.Title }}</h1>
-{{ partial "next-auction" . }}
+<h1>Next Auction:</h1>
+<p>25th November 2018</p>
 {{ partial "gallery" . }}
-{{ partial "about" . }}
+<br />
 {{ end }}
 
 {{ define "script" }}
