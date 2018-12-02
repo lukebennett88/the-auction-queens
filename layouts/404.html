@@ -1,7 +1,30 @@
 {{ define "title" }}Oops!{{ end }}
 
 {{ define "main" }}
-<h1>404: page not found</h1>
-<p>Well this is awkward, there's nothing here...</p>
-<p>Maybe try going <a href="/">back to the home page?</a></p>
+<div
+  class="flex flex-col items-center justify-center bg-white border golden-ratio my-16 mx-auto relative rounded-lg shadow text-center hover:shadow-lg"
+>
+  <div
+    class="absolute flex flex-col items-center leading-none mx-3 my-8 pin-l pin-t text-3xl"
+  >
+    <p class="mb-0">A</p>
+    <p class="text-red">♥︎</p>
+  </div>
+
+  <div class="bg-grey-lightest border px-4 py-8 w-2/3">
+    <h1 class="leading-none text-4xl">404:</h1>
+    <h2 class="mt-0 text-2xl">Page Not Found</h2>
+    <div class="text-grey-darker text-left">
+      <p>Well this is awkward, there's nothing here...</p>
+      <p>Maybe try going <a href="/">back to the home page?</a></p>
+    </div>
+  </div>
+
+  <div
+    class="absolute flex flex-col items-center leading-none mx-3 my-8 pin-b pin-r text-3xl upside-down"
+  >
+    <p class="mb-0">Q</p>
+    <p class="text-red">♥︎</p>
+  </div>
+</div>
 {{ end }}
