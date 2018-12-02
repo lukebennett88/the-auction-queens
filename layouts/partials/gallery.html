@@ -1,13 +1,10 @@
-<section class="bg-grey-lightest border mb-8 p-3">
-  <h2>Gallery</h2>
-  <p>Below is a gallery of items from our upcoming auction</p>
-  {{ with .Resources.ByType "image" }}
-  <div class="siema bg-white border rounded-lg shadow-inner">
-    {{ range . }}
-    <div class="bg-white border m-2 p-2 rounded-lg shadow hover:shadow-lg">
-      <img class="border" src="{{ .RelPermalink }}" alt="">
-    </div>
-    {{ end }}
+<p>Below is a gallery of items from our upcoming auction</p>
+{{ with .Resources.ByType "image" }}
+<div class="siema bg-white border rounded-lg shadow-inner">
+  {{ range . }}
+  <div class="bg-white border m-2 p-2 rounded-lg shadow hover:shadow-lg">
+    <img class="border" src="{{ .RelPermalink }}" alt="">
   </div>
   {{ end }}
-</section>
+</div>
+{{ end }}
