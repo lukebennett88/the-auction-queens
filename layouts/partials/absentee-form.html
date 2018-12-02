@@ -1,54 +1,110 @@
-<form class="w-full" name="absentee-bid" action="/success/" method="POST" autocomplete="on" netlify>
-
+<form
+  class="w-full"
+  name="absentee-bid"
+  action="/success/"
+  method="POST"
+  autocomplete="on"
+  netlify
+>
   <!-- NAME -->
   <div class="flex flex-wrap mb-6 -mx-3">
-
     <!-- FIRST NAME -->
     <div class="mb-6 px-3 w-full md:mb-0 md:w-1/2">
-      <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="fname">First Name</label>
-      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white hover:shadow" id="fname" name="fname" type="text" placeholder="Elizabeth" autocomplete="given-name" required>
+      <label
+        class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase"
+        for="fname"
+        >First Name</label
+      >
+      <input
+        class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white hover:shadow"
+        id="fname"
+        name="fname"
+        type="text"
+        placeholder="Elizabeth"
+        autocomplete="given-name"
+        required
+      />
     </div>
     <!-- END FIRST NAME -->
 
     <!-- LAST NAME -->
     <div class="mb-6 px-3 w-full md:mb-0 md:w-1/2">
-      <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="lname">Last Name</label>
-      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white hover:shadow" id="lname" name="lname" type="text" placeholder="Mountbatten-Windsor" autocomplete="family-name" required>
+      <label
+        class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase"
+        for="lname"
+        >Last Name</label
+      >
+      <input
+        class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white hover:shadow"
+        id="lname"
+        name="lname"
+        type="text"
+        placeholder="Mountbatten-Windsor"
+        autocomplete="family-name"
+        required
+      />
     </div>
     <!-- END LAST NAME -->
-
   </div>
   <!-- END NAME -->
 
-
   <!-- ADDRESS -->
   <div class="flex flex-wrap mb-6 -mx-3">
-
     <!-- STREET -->
     <div class="mb-6 px-3 w-full">
-      <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="address">
+      <label
+        class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase"
+        for="address"
+      >
         Street
       </label>
-      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white hover:shadow" id="address" name="address" type="text" placeholder="1 Queen Street" autocomplete="address-line1" required>
+      <input
+        class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white hover:shadow"
+        id="address"
+        name="address"
+        type="text"
+        placeholder="1 Queen Street"
+        autocomplete="address-line1"
+        required
+      />
     </div>
     <!-- END STREET -->
 
     <!-- CITY -->
     <div class="mb-6 px-3 w-full md:mb-0 md:w-2/5">
-      <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="city">
+      <label
+        class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase"
+        for="city"
+      >
         City
       </label>
-      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white hover:shadow" id="city" name="city" type="text" placeholder="Port Macquarie" autocomplete="address-level2" required>
+      <input
+        class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white hover:shadow"
+        id="city"
+        name="city"
+        type="text"
+        placeholder="Port Macquarie"
+        autocomplete="address-level2"
+        required
+      />
     </div>
     <!-- END CITY -->
 
     <!-- STATE -->
     <div class="mb-6 px-3 w-full md:mb-0 md:w-2/5">
-      <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="state">
+      <label
+        class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase"
+        for="state"
+      >
         State
       </label>
       <div class="relative">
-        <select class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white hover:shadow" id="state" name="state" autocomplete="address-level1">
+        <select
+          class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white hover:shadow"
+          id="state"
+          name="state"
+          autocomplete="address-level1"
+        >
           <option>New South Wales</option>
           <option>Victoria</option>
           <option>Queensland</option>
@@ -58,9 +114,17 @@
           <option>Australian Capital Territory</option>
           <option>Northern Territory</option>
         </select>
-        <div class="absolute flex items-center px-2 pin-r pin-y pointer-events-none text-grey-darker">
-          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path>
+        <div
+          class="absolute flex items-center px-2 pin-r pin-y pointer-events-none text-grey-darker"
+        >
+          <svg
+            class="fill-current h-4 w-4"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+            ></path>
           </svg>
         </div>
       </div>
@@ -69,56 +133,106 @@
 
     <!-- POSTCODE -->
     <div class="mb-6 px-3 w-full md:mb-0 md:w-1/5">
-      <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="postal">
+      <label
+        class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase"
+        for="postal"
+      >
         Postcode
       </label>
-      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white hover:shadow" id="postal" name="postal" type="text" placeholder="2444" inputmode="numeric" pattern="^[0-9]*$" autocomplete="postal-code" minlength="4" maxlength="4" required>
+      <input
+        class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white hover:shadow"
+        id="postal"
+        name="postal"
+        type="text"
+        placeholder="2444"
+        inputmode="numeric"
+        pattern="^[0-9]*$"
+        autocomplete="postal-code"
+        minlength="4"
+        maxlength="4"
+        required
+      />
     </div>
     <!-- END POSTCODE -->
-
   </div>
   <!-- END ADDRESS -->
 
-
   <!-- CONTACT METHODS -->
   <div class="flex flex-wrap -mx-3 mb-6">
-
     <!-- PHONE -->
     <div class="mb-6 px-3 w-full md:mb-0 md:w-1/2">
-      <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="phone">
+      <label
+        class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase"
+        for="phone"
+      >
         Phone
       </label>
-      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white hover:shadow" id="phone" name="phone" type="text" placeholder="0400 000 000" autocomplete="tel-national" required>
+      <input
+        class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white hover:shadow"
+        id="phone"
+        name="phone"
+        type="text"
+        placeholder="0400 000 000"
+        autocomplete="tel-national"
+        required
+      />
     </div>
     <!-- END PHONE -->
 
     <!-- EMAIL -->
     <div class="mb-6 px-3 w-full md:mb-0 md:w-1/2">
-      <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="email">
+      <label
+        class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase"
+        for="email"
+      >
         Email
       </label>
-      <input class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white hover:shadow" id="email" name="email" type="text" placeholder="corgilover69@hotmail.co.uk" autocomplete="email" required>
+      <input
+        class="appearance-none bg-grey-lighter block border leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white hover:shadow"
+        id="email"
+        name="email"
+        type="text"
+        placeholder="corgilover69@hotmail.co.uk"
+        autocomplete="email"
+        required
+      />
     </div>
     <!-- END EMAIL -->
-
   </div>
   <!-- END CONTACT METHODS -->
 
   <!-- MESSAGE -->
   <div class="flex flex-wrap mb-12 md:mb-6">
-    <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="message">
+    <label
+      class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase"
+      for="message"
+    >
       Message
     </label>
-    <textarea class="appearance-none bg-grey-lighter block border h-48 leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white hover:shadow" id="message" name="message" placeholder="Please leave a detailed description of each item you would like to bid on — including the lot number, lot desctiption and your maximum bid for each item." spellcheck="true" required></textarea>
+    <textarea
+      class="appearance-none bg-grey-lighter block border h-48 leading-tight px-4 py-3 rounded shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white hover:shadow"
+      id="message"
+      name="message"
+      placeholder="Please leave a detailed description of each item you would like to bid on — including the lot number, lot desctiption and your maximum bid for each item."
+      spellcheck="true"
+      required
+    ></textarea>
   </div>
   <!-- END MESSAGE -->
 
   <!-- TERMS -->
   <div class="flex flex-wrap mb-2">
-    <label class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase" for="terms">
+    <label
+      class="block font-bold mb-2 text-grey-darker text-xs tracking-wide uppercase"
+      for="terms"
+    >
       Terms &amp; Conditions
     </label>
-    <article class="appearance-none bg-grey-lighter block border h-48 leading-tight overflow-y-scroll p-4 pl-0 rounded scrolling-touch shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white hover:shadow" id="terms" name="terms">
+    <article
+      class="appearance-none bg-grey-lighter block border h-48 leading-tight overflow-y-scroll p-4 pl-0 rounded scrolling-touch shadow-inner text-grey-darker w-full focus:bg-white focus:border-indigo-lighter focus:outline-none hover:bg-white hover:shadow"
+      id="terms"
+      name="terms"
+    >
       {{ partial "terms" . }}
     </article>
   </div>
@@ -126,25 +240,28 @@
 
   <!-- CHECKBOX -->
   <div class="mb-2 text-center w-full">
-    <input id="agree" name="agree" type="checkbox" value="agree" required>
-    <label class="font-bold mb-2 ml-1 text-grey-darker text-sm tracking-wide uppercase" name="agree" for="agree">
+    <input id="agree" name="agree" type="checkbox" value="agree" required />
+    <label
+      class="font-bold mb-2 ml-1 text-grey-darker text-sm tracking-wide uppercase"
+      name="agree"
+      for="agree"
+    >
       I agree to the above Terms & Conditions
     </label>
   </div>
   <!-- END CHECKBOX -->
 
   <div class="hidden">
-    <label>Don’t fill this out if you're human:
-      <input name="bot-field">
+    <label
+      >Don’t fill this out if you're human: <input name="bot-field" />
     </label>
   </div>
 
   <!-- SUBMIT BUTTON -->
-  <div class="text-center w-full">
-    <button class="bg-indigo-lighter px-6 py-3 rounded-lg shadow-lg hover:shadow-none text-grey-darkest font-bold text-2xl" id="submit" name="submit" type="submit">
+  <p class="text-center w-full">
+    <button class="btn" id="submit" name="submit" type="submit">
       Submit bid
     </button>
-  </div>
+  </p>
   <!-- END SUBMIT BUTTON -->
-
 </form>
