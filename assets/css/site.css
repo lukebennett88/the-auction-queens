@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900|Rubik:400,400i,700,700i');
-@import 'components/nav.css';
-@import 'components/elements.css';
-@import 'components/grid.css';
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:900|Rubik:400,400i,700,700i");
+@import "components/nav.css";
+@import "components/elements.css";
+@import "components/grid.css";
 
 :focus:not(:focus-visible) {
   outline: none;
@@ -24,8 +24,8 @@ a:hover {
 }
 
 .btn:hover {
-  color: initial;
   top: 2px;
+  color: initial;
   @apply shadow-none;
 }
 
