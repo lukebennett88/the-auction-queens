@@ -3,8 +3,8 @@
 
 {{ partial "head" . }}
 
-<body class="antialiased bg-indigo-dark font-sans text-lg">
-  <main class="bg-white flex flex-col max-w-lg mt-3 mx-auto w-full">
+<body class="antialiased bg-grey-lighter font-sans overflow-y-hidden text-grey-darkest text-lg">
+  <main class="bg-white flex flex-col max-w-lg mt-3 mx-auto rounded-lg shadow-lg w-full">
     {{ partial "header" . }}
     <section class="max-w-md mt-8 mx-auto px-4 py-8 w-full">
       {{ block "main" . }}{{ end }}
