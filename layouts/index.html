@@ -1,5 +1,8 @@
 {{ define "head" }}
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js" async></script>
+<script
+  src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+  async
+></script>
 {{ end }}
 
 {{ define "main" }}
@@ -10,8 +13,6 @@
 {{ end }}
 
 {{ define "script" }}
-<script src="js/siema.min.js"></script>
-<script src="js/index.js"></script>
 <script async>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {
